@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wasl — Política de privacidad / Privacy Policy</title>
-<meta name="description" content="Política de privacidad de Wasl, la app del Corán y los horarios de rezo: sin anuncios ni rastreadores; cuenta de Google opcional en Android (Firebase) y push del iPhone (OneSignal).">
+<meta name="description" content="Política de privacidad de Wasl, la app del Corán y los horarios de rezo: sin anuncios ni rastreadores; cuenta opcional local con Apple en iPhone, cuenta de Google opcional en Android (Firebase) y push del iPhone (OneSignal).">
 <style>
   :root {
     --bg: #ffffff;
@@ -73,13 +73,13 @@
 
   <header id="es">
     <h1>Wasl — Política de privacidad</h1>
-    <p class="meta">Última actualización: 23 de octubre de 2026</p>
+    <p class="meta">Última actualización: 29 de octubre de 2026</p>
     <p class="langs">Español · <a href="#en">English</a></p>
   </header>
 
   <p>Wasl (وصل) es una aplicación del Corán y de los horarios de rezo creada por Deen Networks. Esta política explica de forma directa qué datos usa la app y qué se hace con ellos.</p>
 
-  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en dos casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores) y el registro del dispositivo para las notificaciones push del iPhone (OneSignal). Los dos se explican más abajo.</p>
+  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en dos casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores) y el registro del dispositivo para las notificaciones push del iPhone (OneSignal). En iPhone, la cuenta opcional con <strong>Iniciar sesión con Apple</strong> se guarda en el llavero del teléfono y <strong>no se envía a ningún servidor</strong>. Todo se explica más abajo.</p>
 
   <h2>Cómo funciona (y por qué casi no hay nada que recopilar)</h2>
   <ul>
@@ -112,8 +112,22 @@
       <td>«Continuar leyendo» y tus referencias</td>
       <td>Almacenamiento privado de la app</td>
     </tr>
+    <tr>
+      <td>Identificador de Apple, nombre y correo — solo si inicias sesión con Apple en iPhone</td>
+      <td>Mostrar tu cuenta y permitir eliminarla</td>
+      <td>Llavero del iPhone; no se envía a ningún servidor</td>
+    </tr>
   </table>
   <p>La ubicación es <strong>opcional</strong>: si no la concedes, puedes elegir tu ciudad a mano y todo funciona igual.</p>
+
+  <h2 id="cuenta-apple">Cuenta opcional en iPhone (Iniciar sesión con Apple)</h2>
+  <p>En la primera apertura, la app ofrece <strong>iniciar sesión con Apple</strong>; el botón <strong>Omitir</strong> está visible y la app funciona entera sin cuenta. Si entras, la app guarda en el <strong>llavero del iPhone</strong> el identificador estable de Apple y, si lo autorizas, tu nombre y tu correo. No hay servidor nuestro, no se guardan tokens de Apple y esa información no se usa para publicidad, analítica ni para vincularla al push.</p>
+  <ul>
+    <li>La cuenta no da acceso a ninguna función: sirve para mostrar quién ha iniciado sesión y poder eliminarla.</li>
+    <li>Se guarda con <code>AfterFirstUnlockThisDeviceOnly</code>: no se sincroniza con iCloud y no sale del teléfono.</li>
+    <li>Si retiras el acceso de Wasl a tu Apple ID desde los Ajustes del iPhone, la app cierra la sesión; tus rezos, historial, lectura y ajustes se quedan.</li>
+    <li>Para <strong>eliminar la cuenta</strong>, abre <strong>Ajustes → icono de persona (arriba a la derecha) → Eliminar cuenta</strong>. Se borran la identidad y todos los datos de Wasl en este iPhone (historial, marcas, progreso, marcadores y ajustes) de forma inmediata, con confirmación.</li>
+  </ul>
 
   <h2 id="cuenta">Cuenta opcional y sincronización (Android)</h2>
   <p>Desde la versión 0.3.0, la app de Android te deja, <strong>si quieres</strong>, iniciar sesión con tu cuenta de Google para guardar una copia de algunos datos en la nube y recuperarlos en otro teléfono. Sin cuenta, la app funciona exactamente igual y no envía nada.</p>
@@ -128,7 +142,7 @@
     <li>Viajan cifrados (HTTPS) y las reglas de la base de datos solo dejan leerlos y escribirlos a tu propia cuenta. Wasl no ve ni guarda tu contraseña: el inicio de sesión lo hace Google.</li>
     <li><strong>No se sube</strong> nada más: ni tu ubicación, ni tu ciudad, ni tus ajustes o avisos.</li>
     <li>No se usan para publicidad, analítica ni perfiles, y no se venden ni se comparten con nadie.</li>
-    <li>Puedes <strong>cerrar sesión</strong> cuando quieras (deja de sincronizar) o <strong>eliminar la cuenta</strong> en Ajustes → Cuenta → Eliminar cuenta: se borran al momento la cuenta y todo lo guardado en la nube; lo que hay en tu teléfono se queda. También puedes pedirlo por correo: ver <a href="eliminar-cuenta.html">Eliminar la cuenta</a>.</li>
+    <li>Puedes <strong>cerrar sesión</strong> cuando quieras (deja de sincronizar) o <strong>eliminar la cuenta</strong> en Ajustes → icono de persona (arriba a la derecha) → Eliminar cuenta: se borran al momento la cuenta y todo lo guardado en la nube; lo que hay en tu teléfono se queda. También puedes pedirlo por correo: ver <a href="eliminar-cuenta.html">Eliminar la cuenta</a>.</li>
   </ul>
 
   <h2>Permisos en Android</h2>
@@ -160,9 +174,9 @@
 
   <h2>Lo que Wasl no hace</h2>
   <ul>
-    <li>No exige cuenta: es opcional, y la app funciona igual sin ella.</li>
+    <li>No exige cuenta: en iPhone la de Apple es opcional y local; en Android la de Google es opcional. La app funciona igual sin ella.</li>
     <li>No usa anuncios, analítica ni rastreadores.</li>
-    <li>No vende datos ni los usa para publicidad o seguimiento. Los únicos terceros que intervienen son proveedores técnicos: <strong>Google Firebase</strong> para la cuenta opcional de Android y <strong>OneSignal</strong> para las notificaciones push del iPhone.</li>
+    <li>No vende datos ni los usa para publicidad o seguimiento. Los únicos terceros que intervienen son proveedores técnicos: <strong>Apple</strong> para Iniciar sesión con Apple (solo autenticación; los datos se quedan en el teléfono), <strong>Google Firebase</strong> para la cuenta opcional de Android y <strong>OneSignal</strong> para las notificaciones push del iPhone.</li>
     <li>No elabora perfiles ni toma decisiones automatizadas sobre ti.</li>
   </ul>
 
@@ -170,12 +184,12 @@
   <p>Si tienes activadas las copias de seguridad del sistema (tu cuenta de Google en Android, iCloud en iPhone), es posible que los datos de la app se incluyan en esa copia. Es una función del propio teléfono: la gestiona tu proveedor (Google o Apple) y se controla desde los ajustes del dispositivo. El desarrollador no accede a ella.</p>
 
   <h2>En iPhone</h2>
-  <p>En iPhone, todo se calcula y se guarda en el dispositivo. El matiz: al usar tu ubicación, el sistema de Apple puede traducir las coordenadas a un nombre de lugar y una zona horaria con su servicio de mapas; esa consulta la hace el sistema operativo bajo la política de privacidad de Apple, y Wasl no la recibe ni la almacena. Las notificaciones push se explican arriba.</p>
+  <p>En iPhone, todo se calcula y se guarda en el dispositivo. La cuenta opcional con Iniciar sesión con Apple también se queda en el llavero del teléfono y no se envía a ningún servidor; se elimina desde Ajustes → icono de persona → Eliminar cuenta, junto con los datos de la app en este iPhone. Al usar tu ubicación, el sistema de Apple puede traducir las coordenadas a un nombre de lugar y una zona horaria con su servicio de mapas; esa consulta la hace el sistema operativo bajo la política de privacidad de Apple, y Wasl no la recibe ni la almacena. Las notificaciones push se explican arriba.</p>
 
   <h2>Tus datos están en tus manos</h2>
   <ul>
-    <li>Al desinstalar la app se borra todo lo que guardaba (y el registro para el push se da de baja); también puedes borrar sus datos desde los ajustes de tu teléfono. Lo guardado en la nube con la cuenta opcional <strong>no</strong> se borra al desinstalar: para eso, elimina la cuenta.</li>
-    <li>La cuenta se elimina desde la app (Ajustes → Cuenta → Eliminar cuenta) o pidiéndolo por correo: ver <a href="eliminar-cuenta.html">Eliminar la cuenta</a>.</li>
+    <li>Al desinstalar la app se borra todo lo que guardaba (y el registro para el push se da de baja); también puedes borrar sus datos desde los ajustes de tu teléfono. Lo guardado en la nube con la cuenta opcional de Android <strong>no</strong> se borra al desinstalar: para eso, elimina la cuenta.</li>
+    <li>La cuenta se elimina desde la app (Ajustes → icono de persona → Eliminar cuenta). En Android se borra además la copia en la nube; en iPhone no hay copia en la nube. También puedes pedirlo por correo: ver <a href="eliminar-cuenta.html">Eliminar la cuenta</a>.</li>
     <li>Para cualquier otra petición sobre tus datos (acceso, rectificación), escríbenos al correo de contacto.</li>
   </ul>
 
@@ -192,13 +206,13 @@
 
   <header id="en">
     <h1>Wasl — Privacy Policy</h1>
-    <p class="meta">Last updated: 23 October 2026</p>
+    <p class="meta">Last updated: 29 October 2026</p>
     <p class="langs"><a href="#es">Español</a> · English</p>
   </header>
 
   <p>Wasl (وصل) is a Quran and prayer-times app made by Deen Networks. This policy explains plainly what data the app uses and what happens to it.</p>
 
-  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in two cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks) and the device registration for iPhone push notifications (OneSignal). Both are explained below.</p>
+  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in two cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks) and the device registration for iPhone push notifications (OneSignal). On iPhone, the optional <strong>Sign in with Apple</strong> account is stored in the phone's Keychain and <strong>is never sent to a server</strong>. Everything is explained below.</p>
 
   <h2>How it works (and why there is almost nothing to collect)</h2>
   <ul>
@@ -231,8 +245,22 @@
       <td>"Continue reading" and your references</td>
       <td>The app's private storage</td>
     </tr>
+    <tr>
+      <td>Apple identifier, name and email — only if you sign in with Apple on iPhone</td>
+      <td>Showing your account and allowing deletion</td>
+      <td>iPhone Keychain; never sent to any server</td>
+    </tr>
   </table>
   <p>Location is <strong>optional</strong>: if you do not grant it, you can pick your city by hand and everything works the same.</p>
+
+  <h2 id="apple-account">Optional iPhone account (Sign in with Apple)</h2>
+  <p>On first launch the app offers <strong>Sign in with Apple</strong>; the <strong>Skip</strong> button is visible and the app works fully without an account. If you sign in, the app stores the stable Apple identifier and, if you authorize it, your name and email in the <strong>iPhone Keychain</strong>. There is no server of ours, no Apple tokens are stored, and that information is not used for advertising, analytics or linked to push.</p>
+  <ul>
+    <li>The account does not unlock any feature: it shows who is signed in and allows deletion.</li>
+    <li>It is stored with <code>AfterFirstUnlockThisDeviceOnly</code>: it is not synced to iCloud and does not leave the phone.</li>
+    <li>If you remove Wasl's access to your Apple ID in iPhone Settings, the app signs out; your prayers, history, reading and settings stay.</li>
+    <li>To <strong>delete the account</strong>, open <strong>Settings → person icon (top right) → Delete account</strong>. The identity and all Wasl data on this iPhone (history, marks, reading progress, bookmarks and settings) are erased immediately, with confirmation.</li>
+  </ul>
 
   <h2 id="account">Optional account and sync (Android)</h2>
   <p>Since version 0.3.0, the Android app lets you, <strong>if you want</strong>, sign in with your Google account to keep a copy of some data in the cloud and get it back on another phone. Without an account, the app works exactly the same and sends nothing.</p>
@@ -247,7 +275,7 @@
     <li>They travel encrypted (HTTPS), and the database rules only let your own account read or write them. Wasl never sees or stores your password: Google handles the sign-in.</li>
     <li><strong>Nothing else is uploaded</strong>: not your location, your city, your settings or your reminders.</li>
     <li>They are not used for advertising, analytics or profiling, and are never sold or shared with anyone.</li>
-    <li>You can <strong>sign out</strong> at any time (syncing stops) or <strong>delete the account</strong> in Settings → Account → Delete account: the account and everything stored in the cloud are erased right away; what is on your phone stays. You can also ask by email: see <a href="eliminar-cuenta.html">Delete your account</a>.</li>
+    <li>You can <strong>sign out</strong> at any time (syncing stops) or <strong>delete the account</strong> in Settings → person icon (top right) → Delete account: the account and everything stored in the cloud are erased right away; what is on your phone stays. You can also ask by email: see <a href="eliminar-cuenta.html">Delete your account</a>.</li>
   </ul>
 
   <h2>Android permissions</h2>
@@ -279,9 +307,9 @@
 
   <h2>What Wasl does not do</h2>
   <ul>
-    <li>No account required: it is optional, and the app works the same without one.</li>
+    <li>No account required: on iPhone the Apple account is optional and local; on Android the Google account is optional. The app works the same without one.</li>
     <li>No ads, analytics or trackers.</li>
-    <li>No selling of data and no use of it for advertising or tracking. The only third parties involved are technical providers: <strong>Google Firebase</strong> for the optional Android account and <strong>OneSignal</strong> for iPhone push notifications.</li>
+    <li>No selling of data and no use of it for advertising or tracking. The only third parties involved are technical providers: <strong>Apple</strong> for Sign in with Apple (authentication only; the data stays on the phone), <strong>Google Firebase</strong> for the optional Android account and <strong>OneSignal</strong> for iPhone push notifications.</li>
     <li>No profiling and no automated decisions about you.</li>
   </ul>
 
@@ -289,12 +317,12 @@
   <p>If you have system backups enabled (your Google account on Android, iCloud on iPhone), the app's data may be included in that backup. That is a feature of your phone: it is handled by your provider (Google or Apple) and controlled from your device settings. The developer has no access to it.</p>
 
   <h2>On iPhone</h2>
-  <p>On iPhone, everything is computed and stored on the device. The nuance: when you use your location, Apple's system may translate the coordinates into a place name and time zone using its maps service; that lookup is made by the operating system under Apple's privacy policy, and Wasl does not receive or store it. Push notifications are explained above.</p>
+  <p>On iPhone, everything is computed and stored on the device. The optional Sign in with Apple account also stays in the phone's Keychain and is never sent to a server; it is deleted in Settings → person icon → Delete account, together with the app's data on this iPhone. When you use your location, Apple's system may translate the coordinates into a place name and time zone using its maps service; that lookup is made by the operating system under Apple's privacy policy, and Wasl does not receive or store it. Push notifications are explained above.</p>
 
   <h2>Your data stays with you</h2>
   <ul>
-    <li>Uninstalling the app erases everything it stored (and the push registration is dropped); you can also clear its data from your phone settings. What the optional account stored in the cloud is <strong>not</strong> erased by uninstalling: to erase it, delete the account.</li>
-    <li>The account can be deleted from the app (Settings → Account → Delete account) or by asking by email: see <a href="eliminar-cuenta.html">Delete your account</a>.</li>
+    <li>Uninstalling the app erases everything it stored (and the push registration is dropped); you can also clear its data from your phone settings. What the optional Android account stored in the cloud is <strong>not</strong> erased by uninstalling: to erase it, delete the account.</li>
+    <li>The account can be deleted from the app (Settings → person icon → Delete account). On Android this also deletes the cloud copy; on iPhone there is no cloud copy. You can also ask by email: see <a href="eliminar-cuenta.html">Delete your account</a>.</li>
     <li>For any other request about your data (access, correction), write to the contact address.</li>
   </ul>
 
