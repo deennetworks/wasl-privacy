@@ -35,7 +35,10 @@
   .store.primary{background:var(--gold);border-color:var(--gold)}
   .store small{display:block;font-weight:400;font-size:13px;opacity:.75}
   .note{font-size:14px;opacity:.8;margin-top:20px}
-  footer{margin-top:28px;font-size:13px;opacity:.7}
+  .langs{margin-top:22px;font-size:14px;opacity:.85}
+  .langs a{color:var(--cream);text-decoration:none}
+  .langs a.on{font-weight:700;text-decoration:underline}
+  footer{margin-top:14px;font-size:13px;opacity:.7}
   footer a{color:var(--cream)}
 </style>
 </head>
@@ -57,6 +60,7 @@
   </div>
 
   <p class="note" data-i18n="note">Choisissez la boutique de votre téléphone.</p>
+  <nav class="langs" id="langs"><a href="#" data-lang="fr">Français</a> · <a href="#" data-lang="es">Español</a> · <a href="#" data-lang="en">English</a></nav>
   <footer><a href="https://deennetworks.github.io/wasl-privacy/" data-i18n="privacy">Confidentialité</a></footer>
 </main>
 
@@ -105,7 +109,13 @@ function buildLinks(search){
   return {apple: apple, play: play};
 }
 
-function pickLang(){
+function pickLang(search){
+  // 1) ?lang=fr|es|en en la URL; 2) campaña terminada en _fr/_es/_en; 3) idioma del dispositivo.
+  var p = new URLSearchParams(search || "");
+  var forced = clean(p.get("lang"), 2);
+  if (TEXT[forced]) return forced;
+  var m = /_(fr|es|en)$/.exec(clean(p.get("utm_campaign")));
+  if (m) return m[1];
   var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "fr"];
   for (var i = 0; i < langs.length; i++){
     var l = String(langs[i]).slice(0,2).toLowerCase();
@@ -119,12 +129,20 @@ if (typeof document !== "undefined") {
   document.getElementById("appstore").href = links.apple;
   document.getElementById("play").href = links.play;
 
-  var lang = pickLang(), t = TEXT[lang];
+  var lang = pickLang(location.search), t = TEXT[lang];
   document.documentElement.lang = lang;
   document.title = t.title;
   document.querySelectorAll("[data-i18n]").forEach(function(el){
     var k = el.getAttribute("data-i18n");
     if (t[k]) el.textContent = t[k];
+  });
+
+  // Selector de idioma: recarga la misma URL con ?lang=xx (conserva los utm_*).
+  document.querySelectorAll("#langs a").forEach(function(a){
+    var l = a.getAttribute("data-lang");
+    if (l === lang) a.classList.add("on");
+    var q = new URLSearchParams(location.search); q.set("lang", l);
+    a.href = location.pathname + "?" + q.toString();
   });
 
   // Destaca y pone primero la tienda del dispositivo (solo en el navegador, no se envía nada).
