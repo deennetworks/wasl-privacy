@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wasl — Coran et horaires de prière</title>
+<meta name="description" content="Wasl : Coran et horaires de prière, sans publicité.">
+<link rel="icon" href="https://wasl-deen.netlify.app/icon.png">
+<style>
+  :root{
+    --bg1:#2f6b55; --bg2:#1f4d3d; --cream:#f6f1e3; --gold:#d9b46a; --ink:#10261e;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--cream);
+    background:radial-gradient(120% 80% at 50% 0%,var(--bg1) 0%,var(--bg2) 70%);
+    min-height:100%;
+    display:flex;align-items:center;justify-content:center;
+    padding:32px 20px;
+  }
+  main{width:100%;max-width:420px;text-align:center}
+  .icon{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:44px;margin:16px 0 4px;letter-spacing:.5px}
+  .ar{font-family:"Geeza Pro","Noto Naskh Arabic","Amiri",serif;color:var(--gold);font-size:28px;margin:0 0 12px}
+  .tagline{font-size:18px;margin:0 0 8px;opacity:.95}
+  .badge{display:inline-block;background:var(--cream);color:var(--ink);font-weight:700;
+    border-radius:999px;padding:8px 18px;margin:8px 0 24px;font-size:16px}
+  .stores{display:flex;flex-direction:column;gap:12px}
+  .store{display:flex;align-items:center;justify-content:center;gap:10px;
+    text-decoration:none;color:var(--ink);background:var(--cream);
+    border-radius:14px;padding:16px;font-size:17px;font-weight:600;
+    border:2px solid transparent}
+  .store.primary{background:var(--gold);border-color:var(--gold)}
+  .store small{display:block;font-weight:400;font-size:13px;opacity:.75}
+  .note{font-size:14px;opacity:.8;margin-top:20px}
+  footer{margin-top:28px;font-size:13px;opacity:.7}
+  footer a{color:var(--cream)}
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="https://wasl-deen.netlify.app/icon.png" alt="Wasl">
+  <h1>Wasl</h1>
+  <p class="ar" lang="ar">وصل</p>
+  <p class="tagline" data-i18n="tagline">Coran et horaires de prière</p>
+  <span class="badge" data-i18n="noads">Sans publicité</span>
+
+  <div class="stores" id="stores">
+    <a class="store" id="appstore" href="https://apps.apple.com/app/id6822041987">
+      <span><span data-i18n="ios">Télécharger sur l'App Store</span><small>iPhone · iPad</small></span>
+    </a>
+    <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.deennetworks.wasl">
+      <span><span data-i18n="android">Disponible sur Google Play</span><small>Android</small></span>
+    </a>
+  </div>
+
+  <p class="note" data-i18n="note">Choisissez la boutique de votre téléphone.</p>
+  <footer><a href="https://deennetworks.github.io/wasl-privacy/" data-i18n="privacy">Confidentialité</a></footer>
+</main>
+
+<script>
+/*
+  Esta página no usa cookies, ni analítica, ni envía nada a ningún servidor.
+  Solo lee los parámetros utm_* de su propia URL y los copia en los enlaces
+  de las tiendas, para que App Store Connect y Play Console atribuyan las
+  descargas a cada campaña.
+
+  APPLE_PT: el "provider token" (pt=) de App Store Connect
+  (Analytics > Adquisición > Campañas > Generar enlace). Es fijo para la cuenta.
+  Mientras esté vacío, el enlace de Apple funciona pero sin atribución.
+*/
+var APPLE_PT = "129581736";
+var APPLE_ID = "6822041987";
+var PLAY_ID  = "com.deennetworks.wasl";
+
+var TEXT = {
+  fr:{tagline:"Coran et horaires de prière",noads:"Sans publicité",ios:"Télécharger sur l'App Store",android:"Disponible sur Google Play",note:"Choisissez la boutique de votre téléphone.",privacy:"Confidentialité",title:"Wasl — Coran et horaires de prière"},
+  es:{tagline:"Corán y horarios de oración",noads:"Sin anuncios",ios:"Descargar en el App Store",android:"Disponible en Google Play",note:"Elige la tienda de tu móvil.",privacy:"Privacidad",title:"Wasl — Corán y horarios de oración"},
+  en:{tagline:"Quran and prayer times",noads:"No ads",ios:"Download on the App Store",android:"Get it on Google Play",note:"Choose the store for your phone.",privacy:"Privacy",title:"Wasl — Quran and prayer times"}
+};
+
+function clean(v, max){
+  return (v || "").toLowerCase().replace(/[^a-z0-9_\-]/g, "").slice(0, max || 40);
+}
+
+function buildLinks(search){
+  var p = new URLSearchParams(search || "");
+  var source   = clean(p.get("utm_source"))   || "web";
+  var medium   = clean(p.get("utm_medium"))   || "direct";
+  var campaign = clean(p.get("utm_campaign")) || clean(p.get("utm_content")) || "sin_campana";
+
+  var apple = "https://apps.apple.com/app/id" + APPLE_ID;
+  if (APPLE_PT) {
+    apple = "https://apps.apple.com/app/apple-store/id" + APPLE_ID +
+            "?pt=" + encodeURIComponent(APPLE_PT) +
+            "&ct=" + encodeURIComponent(campaign) + "&mt=8";
+  }
+
+  var referrer = "utm_source=" + source + "&utm_medium=" + medium + "&utm_campaign=" + campaign;
+  var play = "https://play.google.com/store/apps/details?id=" + PLAY_ID +
+             "&referrer=" + encodeURIComponent(referrer);
+
+  return {apple: apple, play: play};
+}
+
+function pickLang(){
+  var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "fr"];
+  for (var i = 0; i < langs.length; i++){
+    var l = String(langs[i]).slice(0,2).toLowerCase();
+    if (TEXT[l]) return l;
+  }
+  return "fr";
+}
+
+if (typeof document !== "undefined") {
+  var links = buildLinks(location.search);
+  document.getElementById("appstore").href = links.apple;
+  document.getElementById("play").href = links.play;
+
+  var lang = pickLang(), t = TEXT[lang];
+  document.documentElement.lang = lang;
+  document.title = t.title;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){
+    var k = el.getAttribute("data-i18n");
+    if (t[k]) el.textContent = t[k];
+  });
+
+  // Destaca y pone primero la tienda del dispositivo (solo en el navegador, no se envía nada).
+  var ua = navigator.userAgent || "";
+  var isAndroid = /android/i.test(ua);
+  var isApple = /iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+  var stores = document.getElementById("stores");
+  if (isAndroid) {
+    document.getElementById("play").classList.add("primary");
+    stores.insertBefore(document.getElementById("play"), stores.firstChild);
+  } else if (isApple) {
+    document.getElementById("appstore").classList.add("primary");
+  }
+}
+
+if (typeof module !== "undefined") module.exports = {buildLinks: buildLinks, setPT: function(v){ APPLE_PT = v; }};
+</script>
+</body>
+</html>
