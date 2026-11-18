@@ -1,15 +1,15 @@
 # Política de privacidad de Wasl
 
-**Última actualización: 18 de noviembre de 2026**
+**Última actualización: 29 de octubre de 2026**
 
 Wasl (وصل) es una aplicación del Corán y de los horarios de rezo creada por Deen Networks. Esta política explica de forma directa qué datos usa la app y qué se hace con ellos.
 
-**El resumen:** Wasl no muestra anuncios y no hace analítica propia ni perfiles. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Salvo la **medición de instalaciones de nuestros anuncios** con el SDK de Meta (sin identificador publicitario; ver más abajo), solo sale algo de él en dos casos que eliges tú: si inicias sesión con Google en Android (una cuenta **opcional** para sincronizar tus rezos y marcadores) y el registro del dispositivo para las notificaciones push del iPhone (OneSignal). En iPhone, la cuenta opcional con **Iniciar sesión con Apple** se guarda en el llavero del teléfono y **no se envía a ningún servidor**. Todo se explica más abajo.
+**El resumen:** Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en dos casos que eliges tú: si inicias sesión con Google en Android (una cuenta **opcional** para sincronizar tus rezos y marcadores) y el registro del dispositivo para las notificaciones push del iPhone (OneSignal). En iPhone, la cuenta opcional con **Iniciar sesión con Apple** se guarda en el llavero del teléfono y **no se envía a ningún servidor**. Todo se explica más abajo.
 
 ## Cómo funciona (y por qué casi no hay nada que recopilar)
 
-- Wasl funciona entera en tu teléfono: los horarios, el Corán y tu historial no salen de él, y no hay ningún servidor nuestro. (Las excepciones son la cuenta opcional de Android y el registro para las notificaciones push del iPhone y la medición de instalaciones de anuncios.)
-- La versión para Android usa Internet **solo para la cuenta opcional y la medición de instalaciones de anuncios**: si no inicias sesión, no envía nada más.
+- Wasl funciona entera en tu teléfono: los horarios, el Corán y tu historial no salen de él, y no hay ningún servidor nuestro. (Las excepciones son la cuenta opcional de Android y el registro para las notificaciones push del iPhone.)
+- La versión para Android usa Internet **solo para la cuenta opcional**: si no inicias sesión, no envía nada.
 - El texto del Corán y sus traducciones **vienen incluidos en la app**: no se descargan de ningún servidor.
 - Los horarios de rezo y la dirección de la Qibla se calculan **en el propio dispositivo**, a partir de tu ubicación o de la ciudad que elijas.
 
@@ -78,20 +78,11 @@ La versión de iPhone puede recibir **notificaciones push** (avisos que el admin
 - Los **avisos de los rezos no pasan por OneSignal**: los programa tu propio iPhone (notificaciones locales) y se calculan en el dispositivo.
 - Si no quieres nada de esto, basta con **no conceder el permiso de notificaciones**: la app funciona igual.
 
-## Medición de instalaciones de anuncios (Meta)
-
-Wasl puede anunciarse en Facebook e Instagram. Para saber **cuántas instalaciones vienen de un anuncio**, la app incluye el **SDK de Meta**, en iPhone y en Android:
-
-- Al abrir la app, el SDK envía a Meta eventos básicos —instalación y apertura de la app— junto con datos técnicos del dispositivo (modelo, versión del sistema, versión de la app, idioma e identificador anónimo de la instalación). **No envía** tu ubicación, tus rezos, tus marcadores, tu lectura ni los datos de tu cuenta.
-- **No recoge el identificador publicitario** (IDFA en iPhone, ID de publicidad en Android) y **no pide el permiso de seguimiento**. Por eso la medición es menos precisa, y es a propósito.
-- Se usa **solo** para medir y mejorar nuestras campañas. Wasl no muestra anuncios dentro de la app ni vende datos.
-- Meta trata esos datos según [su política de datos](https://www.facebook.com/privacy/policy/). La app funciona igual en cualquier caso.
-
 ## Lo que Wasl no hace
 
 - No exige cuenta: en iPhone la de Apple es opcional y local; en Android la de Google es opcional. La app funciona igual sin ella.
-- No muestra anuncios, no hace analítica propia y no te rastrea entre apps y webs: no pide el permiso de seguimiento y no recoge el identificador publicitario.
-- No vende datos ni los usa para mostrarte publicidad ni para seguirte. Los únicos terceros que intervienen son proveedores técnicos: **Apple** para Iniciar sesión con Apple (solo autenticación; los datos se quedan en el teléfono), **Google Firebase** para la cuenta opcional de Android, **OneSignal** para las notificaciones push del iPhone y **Meta** (SDK de medición de instalaciones).
+- No usa anuncios, analítica ni rastreadores.
+- No vende datos ni los usa para publicidad o seguimiento. Los únicos terceros que intervienen son proveedores técnicos: **Apple** para Iniciar sesión con Apple (solo autenticación; los datos se quedan en el teléfono), **Google Firebase** para la cuenta opcional de Android y **OneSignal** para las notificaciones push del iPhone.
 - No elabora perfiles ni toma decisiones automatizadas sobre ti.
 
 ## Copias de seguridad del teléfono
@@ -124,16 +115,16 @@ Dudas sobre privacidad: **deennetworks@gmail.com**
 
 # Privacy Policy — Wasl
 
-**Last updated: 18 November 2026**
+**Last updated: 29 October 2026**
 
 Wasl (وصل) is a Quran and prayer-times app made by Deen Networks. This policy explains plainly what data the app uses and what happens to it.
 
-**The short version:** Wasl shows no ads and does no analytics or profiling of its own. By default, everything the app saves stays on your device. Apart from the **measurement of installs from our ads** with the Meta SDK (no advertising identifier; see below), something leaves it only in two cases you choose: if you sign in with Google on Android (an **optional** account to sync your prayers and bookmarks) and the device registration for iPhone push notifications (OneSignal). On iPhone, the optional **Sign in with Apple** account is stored in the phone's Keychain and **is never sent to a server**. Everything is explained below.
+**The short version:** Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in two cases you choose: if you sign in with Google on Android (an **optional** account to sync your prayers and bookmarks) and the device registration for iPhone push notifications (OneSignal). On iPhone, the optional **Sign in with Apple** account is stored in the phone's Keychain and **is never sent to a server**. Everything is explained below.
 
 ## How it works (and why there is almost nothing to collect)
 
-- Wasl runs entirely on your phone: prayer times, the Quran and your history never leave it, and there is no server of ours. (The exceptions are the optional Android account the registration for iPhone push notifications and the measurement of installs from ads.)
-- The Android version uses the Internet **only for the optional account and the measurement of installs from ads**: if you do not sign in, it sends nothing else.
+- Wasl runs entirely on your phone: prayer times, the Quran and your history never leave it, and there is no server of ours. (The exceptions are the optional Android account and the registration for iPhone push notifications.)
+- The Android version uses the Internet **only for the optional account**: if you do not sign in, it sends nothing.
 - The Quran text and its translations **are included in the app**: nothing is downloaded from a server.
 - Prayer times and the Qibla direction are calculated **on the device itself**, from your location or the city you choose.
 
@@ -202,20 +193,11 @@ The iPhone version can receive **push notifications** (notices the Wasl administ
 - **Prayer reminders do not go through OneSignal**: your own iPhone schedules them (local notifications) and they are computed on the device.
 - If you do not want any of this, simply **do not grant the notification permission**: the app works the same.
 
-## Measuring installs from ads (Meta)
-
-Wasl may be advertised on Facebook and Instagram. To know **how many installs come from an ad**, the app includes the **Meta SDK**, on iPhone and on Android:
-
-- When the app opens, the SDK sends Meta basic events —install and app open— together with technical device data (model, OS version, app version, language and an anonymous install identifier). It **does not send** your location, your prayers, your bookmarks, your reading or your account data.
-- It **does not collect the advertising identifier** (IDFA on iPhone, advertising ID on Android) and **does not ask for tracking permission**. That makes measurement less precise, on purpose.
-- It is used **only** to measure and improve our campaigns. Wasl shows no ads inside the app and sells no data.
-- Meta handles that data under [its data policy](https://www.facebook.com/privacy/policy/). The app works the same either way.
-
 ## What Wasl does not do
 
 - No account required: on iPhone the Apple account is optional and local; on Android the Google account is optional. The app works the same without one.
-- No ads, no analytics of its own, and no tracking across apps and websites: it does not ask for tracking permission and does not collect the advertising identifier.
-- No selling of data and no use of it to show you ads or to follow you. The only third parties involved are technical providers: **Apple** for Sign in with Apple (authentication only; the data stays on the phone), **Google Firebase** for the optional Android account, **OneSignal** for iPhone push notifications and **Meta** (install-measurement SDK).
+- No ads, analytics or trackers.
+- No selling of data and no use of it for advertising or tracking. The only third parties involved are technical providers: **Apple** for Sign in with Apple (authentication only; the data stays on the phone), **Google Firebase** for the optional Android account and **OneSignal** for iPhone push notifications.
 - No profiling and no automated decisions about you.
 
 ## Device backups
