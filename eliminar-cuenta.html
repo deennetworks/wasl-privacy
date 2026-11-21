@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wasl — Eliminar la cuenta / Delete your account</title>
+<title>Wasl — Eliminar la cuenta / Delete your account / Supprimer le compte / حذف الحساب</title>
 <meta name="description" content="Cómo eliminar tu cuenta de Wasl y los datos guardados en la nube.">
 <style>
   :root {
@@ -38,28 +38,26 @@
   .langs { margin: 0 0 2rem; font-size: .95rem; }
   .langs a { color: var(--accent); text-decoration: none; font-weight: 600; }
   .langs a:hover { text-decoration: underline; }
-  .contact {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: .7rem;
-    padding: 1rem 1.15rem;
-    margin: 1.2rem 0;
-  }
   p { margin: .8rem 0; }
-  ul { padding-left: 1.25rem; margin: .8rem 0; }
+  ul, ol { padding-left: 1.25rem; margin: .8rem 0; }
   li { margin: .35rem 0; }
   a { color: var(--accent); }
   .rule { border: 0; border-top: 1px solid var(--border); margin: 3rem 0 2.5rem; }
   footer { color: var(--muted); font-size: .9rem; margin-top: 2.5rem; }
+  [dir="rtl"] { text-align: right; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.25rem; }
+  [dir="rtl"] .langs[dir="ltr"] { text-align: right; }
+  [lang="ar"] { font-family: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header id="es">
+<section id="es" lang="es">
+  <header>
     <h1>Wasl — Eliminar la cuenta</h1>
     <p class="meta">Wasl (وصل), app del Corán y los horarios de rezo · Deen Networks</p>
-    <p class="langs">Español · <a href="#en">English</a></p>
+    <p class="langs">Español · <a href="#en">English</a> · <a href="#fr">Français</a> · <a href="#ar">العربية</a></p>
   </header>
 
   <p>La cuenta de Wasl es <strong>opcional</strong>. En iPhone se crea con <strong>Iniciar sesión con Apple</strong> y se guarda solo en el llavero del teléfono. En Android se crea con Google y sirve para sincronizar tus rezos marcados, marcadores y posición de lectura entre teléfonos. Puedes eliminarla de dos formas:</p>
@@ -68,18 +66,18 @@
   <ol>
     <li>Abre Wasl y ve a <strong>Ajustes</strong>.</li>
     <li>Pulsa el <strong>icono de persona</strong> de arriba a la derecha.</li>
-    <li>Pulsa <strong>Eliminar cuenta</strong> y confirma. En Android, Google puede pedirte volver a elegir tu cuenta. En iPhone no hay ningún servidor que verificar.</li>
+    <li>Pulsa <strong>Eliminar cuenta</strong> y confirma. En Android, Google puede pedirte volver a elegir tu cuenta. En iPhone no hay ninguna cuenta en un servidor que verificar: el servidor de recitación no guarda cuentas.</li>
   </ol>
 
   <h2>2. Por correo (Android, si ya no tienes la app)</h2>
-  <p>Escribe a <strong><a href="mailto:deennetworks@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Wasl">deennetworks@gmail.com</a></strong> con el asunto «Eliminar mi cuenta de Wasl» <strong>desde el correo de la cuenta de Google que usaste</strong> en la app. La eliminamos en un plazo máximo de 30 días y te confirmamos por correo cuando esté hecho. En iPhone la cuenta es local: si ya no tienes la app, al desinstalarla se borra y no queda copia en ningún servidor.</p>
+  <p>Escribe a <strong><a href="mailto:deennetworks@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Wasl">deennetworks@gmail.com</a></strong> con el asunto «Eliminar mi cuenta de Wasl» <strong>desde el correo de la cuenta de Google que usaste</strong> en la app. La eliminamos en un plazo máximo de 30 días y te confirmamos por correo cuando esté hecho. En iPhone la cuenta es local: si ya no tienes la app, al desinstalarla se borra y no queda copia de la cuenta en ningún servidor.</p>
 
   <h2>Qué se borra</h2>
   <ul>
     <li><strong>iPhone:</strong> el identificador de Apple, el nombre y el correo (si los autorizaste) y todos los datos de Wasl en ese iPhone: rezos marcados, historial, progreso de lectura, marcadores y ajustes. No hay copia en la nube.</li>
     <li><strong>Android:</strong> tu cuenta en Wasl (identificador, correo y nombre que dio Google) y todo lo guardado en la nube: rezos marcados, marcadores del Corán y posición de lectura.</li>
   </ul>
-  <p>No guardamos copias: en Android, al eliminar la cuenta, esos datos desaparecen de nuestros servidores (Google Firebase) y no se conservan. En iPhone no hay servidores ni copia que borrar.</p>
+  <p>No guardamos copias: en Android, al eliminar la cuenta, esos datos desaparecen de nuestros servidores (Google Firebase) y no se conservan. En iPhone no hay cuenta en ningún servidor ni copia que borrar.</p>
 
   <h2>Qué no se borra</h2>
   <ul>
@@ -89,13 +87,15 @@
   </ul>
 
   <p>Más información en la <a href="index.html">política de privacidad</a>.</p>
+</section>
 
-  <hr class="rule">
+<hr class="rule">
 
-  <header id="en">
+<section id="en" lang="en">
+  <header>
     <h1>Wasl — Delete your account</h1>
     <p class="meta">Wasl (وصل), Quran and prayer-times app · Deen Networks</p>
-    <p class="langs"><a href="#es">Español</a> · English</p>
+    <p class="langs"><a href="#es">Español</a> · English · <a href="#fr">Français</a> · <a href="#ar">العربية</a></p>
   </header>
 
   <p>The Wasl account is <strong>optional</strong>. On iPhone it is created with <strong>Sign in with Apple</strong> and stored only in the phone's Keychain. On Android it is created with Google and is used to sync your marked prayers, bookmarks and reading position between phones. You can delete it in two ways:</p>
@@ -104,18 +104,18 @@
   <ol>
     <li>Open Wasl and go to <strong>Settings</strong>.</li>
     <li>Tap the <strong>person icon</strong> at the top right.</li>
-    <li>Tap <strong>Delete account</strong> and confirm. On Android, Google may ask you to pick your account again. On iPhone there is no server to verify.</li>
+    <li>Tap <strong>Delete account</strong> and confirm. On Android, Google may ask you to pick your account again. On iPhone there is no account on a server to verify: the recitation server does not store accounts.</li>
   </ol>
 
   <h2>2. By email (Android, if you no longer have the app)</h2>
-  <p>Write to <strong><a href="mailto:deennetworks@gmail.com?subject=Delete%20my%20Wasl%20account">deennetworks@gmail.com</a></strong> with the subject "Delete my Wasl account" <strong>from the email address of the Google account you used</strong> in the app. We delete it within 30 days at most and confirm by email when it is done. On iPhone the account is local: if you no longer have the app, uninstalling it erases the account and no copy remains on any server.</p>
+  <p>Write to <strong><a href="mailto:deennetworks@gmail.com?subject=Delete%20my%20Wasl%20account">deennetworks@gmail.com</a></strong> with the subject "Delete my Wasl account" <strong>from the email address of the Google account you used</strong> in the app. We delete it within 30 days at most and confirm by email when it is done. On iPhone the account is local: if you no longer have the app, uninstalling it erases the account and no copy of it remains on any server.</p>
 
   <h2>What is deleted</h2>
   <ul>
     <li><strong>iPhone:</strong> the Apple identifier, name and email (if you authorized them) and all Wasl data on that iPhone: prayer marks, history, reading progress, bookmarks and settings. There is no cloud copy.</li>
     <li><strong>Android:</strong> your Wasl account (the identifier, email and name Google provided) and everything stored in the cloud: marked prayers, Quran bookmarks and reading position.</li>
   </ul>
-  <p>We keep no copies: on Android, once the account is deleted, that data is removed from our servers (Google Firebase) and is not retained. On iPhone there are no servers or copies to delete.</p>
+  <p>We keep no copies: on Android, once the account is deleted, that data is removed from our servers (Google Firebase) and is not retained. On iPhone there is no account on any server and no copy to delete.</p>
 
   <h2>What is not deleted</h2>
   <ul>
@@ -125,8 +125,85 @@
   </ul>
 
   <p>More information in the <a href="index.html">privacy policy</a>.</p>
+</section>
 
-  <footer>Wasl · Deen Networks · 2026 · <a href="soporte.html">Soporte / Support</a></footer>
+<hr class="rule">
+
+<section id="fr" lang="fr">
+  <header>
+    <h1>Wasl — Supprimer le compte</h1>
+    <p class="meta">Wasl (وصل), app du Coran et des horaires de prière · Deen Networks</p>
+    <p class="langs"><a href="#es">Español</a> · <a href="#en">English</a> · Français · <a href="#ar">العربية</a></p>
+  </header>
+
+  <p>Le compte Wasl est <strong>facultatif</strong>. Sur iPhone, il est créé avec <strong>Se connecter avec Apple</strong> et conservé uniquement dans le trousseau du téléphone. Sur Android, il est créé avec Google et sert à synchroniser tes prières marquées, tes signets et ta position de lecture entre téléphones. Tu peux le supprimer de deux manières :</p>
+
+  <h2>1. Depuis l'app (immédiat)</h2>
+  <ol>
+    <li>Ouvre Wasl et va dans <strong>Réglages</strong>.</li>
+    <li>Appuie sur l'<strong>icône de personne</strong> en haut à droite.</li>
+    <li>Appuie sur <strong>Supprimer le compte</strong> et confirme. Sur Android, Google peut te demander de choisir à nouveau ton compte. Sur iPhone, il n'y a aucun compte sur un serveur à vérifier : le serveur de récitation ne conserve pas de comptes.</li>
+  </ol>
+
+  <h2>2. Par e-mail (Android, si tu n'as plus l'app)</h2>
+  <p>Écris à <strong><a href="mailto:deennetworks@gmail.com?subject=Supprimer%20mon%20compte%20Wasl">deennetworks@gmail.com</a></strong> avec l'objet « Supprimer mon compte Wasl » <strong>depuis l'adresse e-mail du compte Google que tu as utilisé</strong> dans l'app. Nous le supprimons dans un délai maximal de 30 jours et te le confirmons par e-mail. Sur iPhone, le compte est local : si tu n'as plus l'app, la désinstallation l'efface et aucune copie du compte ne reste sur un serveur.</p>
+
+  <h2>Ce qui est supprimé</h2>
+  <ul>
+    <li><strong>iPhone :</strong> l'identifiant Apple, le nom et l'e-mail (si tu les as autorisés) et toutes les données de Wasl sur cet iPhone : prières marquées, historique, progression de lecture, signets et réglages. Il n'y a pas de copie dans le cloud.</li>
+    <li><strong>Android :</strong> ton compte Wasl (identifiant, e-mail et nom fournis par Google) et tout ce qui est stocké dans le cloud : prières marquées, signets du Coran et position de lecture.</li>
+  </ul>
+  <p>Nous ne conservons aucune copie : sur Android, une fois le compte supprimé, ces données disparaissent de nos serveurs (Google Firebase) et ne sont pas conservées. Sur iPhone, il n'y a aucun compte sur un serveur ni copie à supprimer.</p>
+
+  <h2>Ce qui n'est pas supprimé</h2>
+  <ul>
+    <li><strong>Ton identifiant Apple ou ton compte Google</strong> n'est pas touché : seul ton compte Wasl est supprimé.</li>
+    <li><strong>Android :</strong> ce qui est sur ton téléphone reste (l'app fonctionne de la même manière sans compte). Pour l'effacer, désinstalle l'app ou efface ses données depuis les réglages du téléphone.</li>
+    <li><strong>iPhone :</strong> la suppression depuis l'app efface aussi les données locales de Wasl sur cet iPhone ; ton identifiant Apple reste intact.</li>
+  </ul>
+
+  <p>Plus d'informations dans la <a href="index.html">politique de confidentialité</a>.</p>
+</section>
+
+<hr class="rule">
+
+<section id="ar" lang="ar" dir="rtl">
+  <header>
+    <h1>Wasl — حذف الحساب</h1>
+    <p class="meta">Wasl (وصل)، تطبيق القرآن الكريم ومواقيت الصلاة · Deen Networks</p>
+    <p class="langs" dir="ltr" style="text-align:right"><a href="#es">Español</a> · <a href="#en">English</a> · <a href="#fr">Français</a> · العربية</p>
+  </header>
+
+  <p>حساب Wasl <strong>اختياري</strong>. على iPhone يُنشأ عبر <strong>تسجيل الدخول باستخدام Apple</strong> ويُحفظ فقط في سلسلة مفاتيح الهاتف. وعلى Android يُنشأ بحساب Google ويُستخدم لمزامنة صلواتك المحددة وعلاماتك المرجعية وموضع القراءة بين الهواتف. يمكنك حذفه بطريقتين:</p>
+
+  <h2>1. من التطبيق (فوري)</h2>
+  <ol>
+    <li>افتح Wasl واذهب إلى <strong>الإعدادات</strong>.</li>
+    <li>اضغط على <strong>أيقونة الشخص</strong> أعلى اليمين.</li>
+    <li>اضغط على <strong>حذف الحساب</strong> وأكّد. على Android، قد تطلب منك Google اختيار حسابك مرة أخرى. على iPhone لا يوجد أي حساب على خادم للتحقق منه: خادم التلاوة لا يحفظ حسابات.</li>
+  </ol>
+
+  <h2>2. بالبريد (Android، إذا لم يعد لديك التطبيق)</h2>
+  <p>اكتب إلى <strong><a href="mailto:deennetworks@gmail.com?subject=%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20Wasl">deennetworks@gmail.com</a></strong> بعنوان «حذف حساب Wasl» <strong>من بريد حساب Google الذي استخدمته</strong> في التطبيق. نحذفه في مدة أقصاها 30 يومًا ونؤكد لك ذلك بالبريد. على iPhone الحساب محلي: إذا لم يعد لديك التطبيق، فإن إلغاء تثبيته يحذف الحساب ولا تبقى نسخة منه على أي خادم.</p>
+
+  <h2>ما يُحذف</h2>
+  <ul>
+    <li><strong>iPhone:</strong> معرّف Apple والاسم والبريد (إذا سمحت بهما) وجميع بيانات Wasl على ذلك iPhone: الصلوات المحددة والسجل وتقدم القراءة والعلامات المرجعية والإعدادات. لا توجد نسخة سحابية.</li>
+    <li><strong>Android:</strong> حسابك في Wasl (المعرّف والبريد والاسم الذي قدّمته Google) وكل ما هو محفوظ في السحابة: الصلوات المحددة وعلامات القرآن المرجعية وموضع القراءة.</li>
+  </ul>
+  <p>لا نحتفظ بنسخ: على Android، عند حذف الحساب تختفي تلك البيانات من خوادمنا (Google Firebase) ولا تُحفظ. وعلى iPhone لا يوجد حساب على أي خادم ولا نسخة تُحذف.</p>
+
+  <h2>ما لا يُحذف</h2>
+  <ul>
+    <li><strong>معرّف Apple أو حساب Google</strong> لا يُمسّان: يُحذف حسابك في Wasl فقط.</li>
+    <li><strong>Android:</strong> ما في هاتفك يبقى (يعمل التطبيق بالطريقة نفسها من دون حساب). لحذفه، ألغِ تثبيت التطبيق أو امسح بياناته من إعدادات الهاتف.</li>
+    <li><strong>iPhone:</strong> الحذف من التطبيق يحذف أيضًا بيانات Wasl المحلية على ذلك iPhone؛ ويبقى معرّف Apple سليمًا.</li>
+  </ul>
+
+  <p>مزيد من المعلومات في <a href="index.html">سياسة الخصوصية</a>.</p>
+</section>
+
+<footer>Wasl · Deen Networks · 2026 · <a href="index.html">Privacidad / Privacy / Confidentialité / الخصوصية</a> · <a href="soporte.html">Soporte / Support / Assistance / الدعم</a></footer>
 
 </div>
 </body>

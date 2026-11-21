@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wasl — Política de privacidad / Privacy Policy</title>
-<meta name="description" content="Política de privacidad de Wasl, la app del Corán y los horarios de rezo: sin anuncios ni rastreadores; cuenta opcional local con Apple en iPhone, cuenta de Google opcional en Android (Firebase) y push del iPhone (OneSignal).">
+<title>Wasl — Política de privacidad / Privacy Policy / Politique de confidentialité / سياسة الخصوصية</title>
+<meta name="description" content="Política de privacidad de Wasl, la app del Corán y los horarios de rezo: sin anuncios ni rastreadores; recitación en streaming desde Quran Foundation; cuenta opcional local con Apple en iPhone, cuenta de Google opcional en Android (Firebase) y push del iPhone (OneSignal).">
 <style>
   :root {
     --bg: #ffffff;
@@ -49,7 +49,7 @@
   table { width: 100%; border-collapse: collapse; margin: .8rem 0 1.2rem; font-size: .95rem; }
   th, td { text-align: left; padding: .55rem .65rem; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { color: var(--muted); font-weight: 600; }
-  ul { padding-left: 1.25rem; margin: .8rem 0; }
+  ul, ol { padding-left: 1.25rem; margin: .8rem 0; }
   li { margin: .35rem 0; }
   code {
     background: var(--card);
@@ -61,31 +61,38 @@
   a { color: var(--accent); }
   .rule { border: 0; border-top: 1px solid var(--border); margin: 3rem 0 2.5rem; }
   footer { color: var(--muted); font-size: .9rem; margin-top: 2.5rem; }
+  [dir="rtl"] { text-align: right; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.25rem; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+  [dir="rtl"] .langs[dir="ltr"] { text-align: right; }
+  [lang="ar"] { font-family: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif; }
   @media (max-width: 420px) {
     table { font-size: .9rem; }
     th, td { padding: .45rem .4rem; }
   }
 </style>
-<!-- Mantenimiento: el mismo texto vive en README.md; al editar la política, actualizar los dos. -->
+<!-- README.md es un índice breve; la política completa vive aquí. Al editarla, actualizar README.md. -->
 </head>
 <body>
 <div class="wrap">
 
-  <header id="es">
+<section id="es" lang="es">
+  <header>
     <h1>Wasl — Política de privacidad</h1>
-    <p class="meta">Última actualización: 29 de octubre de 2026</p>
-    <p class="langs">Español · <a href="#en">English</a></p>
+    <p class="meta">Última actualización: 21 de noviembre de 2026</p>
+    <p class="langs">Español · <a href="#en">English</a> · <a href="#fr">Français</a> · <a href="#ar">العربية</a></p>
   </header>
 
   <p>Wasl (وصل) es una aplicación del Corán y de los horarios de rezo creada por Deen Networks. Esta política explica de forma directa qué datos usa la app y qué se hace con ellos.</p>
 
-  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en dos casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores) y el registro del dispositivo para las notificaciones push del iPhone (OneSignal). En iPhone, la cuenta opcional con <strong>Iniciar sesión con Apple</strong> se guarda en el llavero del teléfono y <strong>no se envía a ningún servidor</strong>. Todo se explica más abajo.</p>
+  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en tres casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores), si activas las notificaciones push del iPhone (OneSignal) y al reproducir la recitación del Corán, que se pide a Quran Foundation a través de un servidor de Wasl. En iPhone, la cuenta opcional con <strong>Iniciar sesión con Apple</strong> se guarda en el llavero del teléfono y <strong>no se envía a ningún servidor</strong>. Todo se explica más abajo.</p>
 
   <h2>Cómo funciona (y por qué casi no hay nada que recopilar)</h2>
   <ul>
-    <li>Wasl funciona entera en tu teléfono: los horarios, el Corán y tu historial no salen de él, y no hay ningún servidor nuestro. (Las excepciones son la cuenta opcional de Android —ver <a href="#cuenta">«Cuenta opcional»</a>— y el registro para las notificaciones push del iPhone.)</li>
-    <li>La versión para Android usa Internet <strong>solo para la cuenta opcional</strong>: si no inicias sesión, no envía nada.</li>
+    <li>Wasl funciona en tu teléfono: los horarios de rezo, la dirección de la Qibla y tu historial se calculan y se guardan ahí.</li>
     <li>El texto del Corán y sus traducciones <strong>vienen incluidos en la app</strong>: no se descargan de ningún servidor.</li>
+    <li>La <strong>recitación del Corán</strong> es la excepción: al pulsar play, la app pide a un servidor de Wasl (alojado en Cloudflare) el catálogo de recitadores y las URLs de audio, y reproduce el audio en streaming desde Quran Foundation. Esas peticiones llevan datos técnicos de la conexión (dirección IP, dispositivo y sura solicitada), pero no tu cuenta, ubicación, historial ni marcadores.</li>
+    <li>La versión de Android usa Internet <strong>solo para la cuenta opcional</strong>; la recitación está en la versión de iPhone.</li>
     <li>Los horarios de rezo y la dirección de la Qibla se calculan <strong>en el propio dispositivo</strong>, a partir de tu ubicación o de la ciudad que elijas.</li>
   </ul>
 
@@ -95,7 +102,7 @@
     <tr>
       <td>Ubicación aproximada — <strong>opcional</strong></td>
       <td>Calcular los horarios de rezo y la dirección de la Qibla</td>
-      <td>Solo en tu teléfono: se calcula ahí mismo y no se envía a ningún servidor nuestro</td>
+      <td>Solo en tu teléfono: se calcula ahí mismo y no se envía a ningún servidor de Wasl</td>
     </tr>
     <tr>
       <td>Ciudad, método de cálculo, madhab e idioma</td>
@@ -119,9 +126,18 @@
     </tr>
   </table>
   <p>La ubicación es <strong>opcional</strong>: si no la concedes, puedes elegir tu ciudad a mano y todo funciona igual.</p>
+  <p>El audio de recitación <strong>no se guarda</strong> en el dispositivo: se reproduce en streaming solo cuando lo pides.</p>
+
+  <h2 id="recitacion">Recitación del Corán (audio)</h2>
+  <p>La recitación solo se pide cuando tú la activas, al pulsar play o «Escuchar desde aquí». La app consulta un servidor de Wasl, alojado en Cloudflare, para obtener el catálogo de recitadores y la dirección del audio de cada aleya; el audio se reproduce directamente desde los servidores de <strong>Quran Foundation</strong> (quran.foundation) y sus CDN.</p>
+  <ul>
+    <li>El servidor de Wasl y Quran Foundation reciben los datos técnicos necesarios para entregar el audio: <strong>dirección IP, tipo de dispositivo y la sura o pista solicitada</strong>. No reciben tu cuenta, tu ubicación, tu historial de rezos, tu progreso de lectura ni tus marcadores, y no se usan para publicidad, analítica ni perfiles.</li>
+    <li>Wasl no guarda el audio ni un historial de lo que escuchas. Como en cualquier reproducción en streaming, el dispositivo puede mantener temporalmente una parte en memoria para reproducir sin cortes; no se conserva como archivo.</li>
+    <li>Sin conexión a Internet, la recitación no está disponible; el resto de la app sigue funcionando.</li>
+  </ul>
 
   <h2 id="cuenta-apple">Cuenta opcional en iPhone (Iniciar sesión con Apple)</h2>
-  <p>En la primera apertura, la app ofrece <strong>iniciar sesión con Apple</strong>; el botón <strong>Omitir</strong> está visible y la app funciona entera sin cuenta. Si entras, la app guarda en el <strong>llavero del iPhone</strong> el identificador estable de Apple y, si lo autorizas, tu nombre y tu correo. No hay servidor nuestro, no se guardan tokens de Apple y esa información no se usa para publicidad, analítica ni para vincularla al push.</p>
+  <p>En la primera apertura, la app ofrece <strong>iniciar sesión con Apple</strong>; el botón <strong>Omitir</strong> está visible y la app funciona entera sin cuenta. Si entras, la app guarda en el <strong>llavero del iPhone</strong> el identificador estable de Apple y, si lo autorizas, tu nombre y tu correo. La cuenta no se envía a ningún servidor: el servidor de Wasl solo sirve el catálogo y las URLs de recitación y no recibe datos de la cuenta. No se guardan tokens de Apple y esa información no se usa para publicidad, analítica ni para vincularla al push.</p>
   <ul>
     <li>La cuenta no da acceso a ninguna función: sirve para mostrar quién ha iniciado sesión y poder eliminarla.</li>
     <li>Se guarda con <code>AfterFirstUnlockThisDeviceOnly</code>: no se sincroniza con iCloud y no sale del teléfono.</li>
@@ -155,6 +171,7 @@
     <tr><td>Internet</td><td>Solo la cuenta opcional y la sincronización</td></tr>
   </table>
   <p>Las bibliotecas de AndroidX que la app usa para los widgets añaden permisos auxiliares (mantener el dispositivo activo, consultar el estado de la red), que no envían datos.</p>
+  <p>La recitación del Corán se reproduce en la versión de iPhone.</p>
 
   <h2>Permisos en iPhone</h2>
   <table>
@@ -162,6 +179,7 @@
     <tr><td>Ubicación (al usar la app)</td><td>Horarios de rezo y Qibla (opcional)</td></tr>
     <tr><td>Notificaciones</td><td>Los avisos de los rezos y las notificaciones que envía el administrador de la app</td></tr>
   </table>
+  <p>La recitación usa la conexión a Internet, pero iOS no pide un permiso aparte para ello.</p>
 
   <h2>Notificaciones push en iPhone</h2>
   <p>La versión de iPhone puede recibir <strong>notificaciones push</strong> (avisos que el administrador de Wasl envía desde fuera de la app, por ejemplo un comunicado). La entrega la hace <strong>OneSignal</strong>, un servicio de notificaciones, a través del sistema de notificaciones de Apple (APNs):</p>
@@ -176,7 +194,7 @@
   <ul>
     <li>No exige cuenta: en iPhone la de Apple es opcional y local; en Android la de Google es opcional. La app funciona igual sin ella.</li>
     <li>No usa anuncios, analítica ni rastreadores.</li>
-    <li>No vende datos ni los usa para publicidad o seguimiento. Los únicos terceros que intervienen son proveedores técnicos: <strong>Apple</strong> para Iniciar sesión con Apple (solo autenticación; los datos se quedan en el teléfono), <strong>Google Firebase</strong> para la cuenta opcional de Android y <strong>OneSignal</strong> para las notificaciones push del iPhone.</li>
+    <li>No vende datos ni los usa para publicidad o seguimiento. Los únicos terceros que intervienen son proveedores técnicos: <strong>Apple</strong> para Iniciar sesión con Apple (solo autenticación; los datos se quedan en el teléfono), <strong>Google Firebase</strong> para la cuenta opcional de Android, <strong>OneSignal</strong> para las notificaciones push del iPhone, <strong>Quran Foundation</strong> para el audio de la recitación y <strong>Cloudflare</strong> para alojar el servidor de Wasl.</li>
     <li>No elabora perfiles ni toma decisiones automatizadas sobre ti.</li>
   </ul>
 
@@ -184,12 +202,13 @@
   <p>Si tienes activadas las copias de seguridad del sistema (tu cuenta de Google en Android, iCloud en iPhone), es posible que los datos de la app se incluyan en esa copia. Es una función del propio teléfono: la gestiona tu proveedor (Google o Apple) y se controla desde los ajustes del dispositivo. El desarrollador no accede a ella.</p>
 
   <h2>En iPhone</h2>
-  <p>En iPhone, todo se calcula y se guarda en el dispositivo. La cuenta opcional con Iniciar sesión con Apple también se queda en el llavero del teléfono y no se envía a ningún servidor; se elimina desde Ajustes → icono de persona → Eliminar cuenta, junto con los datos de la app en este iPhone. Al usar tu ubicación, el sistema de Apple puede traducir las coordenadas a un nombre de lugar y una zona horaria con su servicio de mapas; esa consulta la hace el sistema operativo bajo la política de privacidad de Apple, y Wasl no la recibe ni la almacena. Las notificaciones push se explican arriba.</p>
+  <p>En iPhone, todo lo que la app guarda se calcula y se guarda en el dispositivo. La cuenta opcional con Iniciar sesión con Apple también se queda en el llavero del teléfono y no se envía a ningún servidor; se elimina desde Ajustes → icono de persona → Eliminar cuenta, junto con los datos de la app en este iPhone. La recitación usa Internet como se explica arriba. Al usar tu ubicación, el sistema de Apple puede traducir las coordenadas a un nombre de lugar y una zona horaria con su servicio de mapas; esa consulta la hace el sistema operativo bajo la política de privacidad de Apple, y Wasl no la recibe ni la almacena. Las notificaciones push se explican arriba.</p>
 
   <h2>Tus datos están en tus manos</h2>
   <ul>
     <li>Al desinstalar la app se borra todo lo que guardaba (y el registro para el push se da de baja); también puedes borrar sus datos desde los ajustes de tu teléfono. Lo guardado en la nube con la cuenta opcional de Android <strong>no</strong> se borra al desinstalar: para eso, elimina la cuenta.</li>
     <li>La cuenta se elimina desde la app (Ajustes → icono de persona → Eliminar cuenta). En Android se borra además la copia en la nube; en iPhone no hay copia en la nube. También puedes pedirlo por correo: ver <a href="eliminar-cuenta.html">Eliminar la cuenta</a>.</li>
+    <li>El servidor de Wasl no guarda un historial de recitación asociado a ti; solo entrega el catálogo y las URLs de audio.</li>
     <li>Para cualquier otra petición sobre tus datos (acceso, rectificación), escríbenos al correo de contacto.</li>
   </ul>
 
@@ -201,24 +220,27 @@
 
   <h2>Contacto</h2>
   <p>Dudas sobre privacidad: <strong><a href="mailto:deennetworks@gmail.com">deennetworks@gmail.com</a></strong></p>
+</section>
 
-  <hr class="rule">
+<hr class="rule">
 
-  <header id="en">
+<section id="en" lang="en">
+  <header>
     <h1>Wasl — Privacy Policy</h1>
-    <p class="meta">Last updated: 29 October 2026</p>
-    <p class="langs"><a href="#es">Español</a> · English</p>
+    <p class="meta">Last updated: 21 November 2026</p>
+    <p class="langs"><a href="#es">Español</a> · English · <a href="#fr">Français</a> · <a href="#ar">العربية</a></p>
   </header>
 
   <p>Wasl (وصل) is a Quran and prayer-times app made by Deen Networks. This policy explains plainly what data the app uses and what happens to it.</p>
 
-  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in two cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks) and the device registration for iPhone push notifications (OneSignal). On iPhone, the optional <strong>Sign in with Apple</strong> account is stored in the phone's Keychain and <strong>is never sent to a server</strong>. Everything is explained below.</p>
+  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in three cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks), if you enable iPhone push notifications (OneSignal), and when you play Quran recitation, whose audio is requested from Quran Foundation through a Wasl server. On iPhone, the optional <strong>Sign in with Apple</strong> account is stored in the phone's Keychain and <strong>is never sent to a server</strong>. Everything is explained below.</p>
 
   <h2>How it works (and why there is almost nothing to collect)</h2>
   <ul>
-    <li>Wasl runs entirely on your phone: prayer times, the Quran and your history never leave it, and there is no server of ours. (The exceptions are the optional Android account — see <a href="#account">"Optional account"</a> — and the registration for iPhone push notifications.)</li>
-    <li>The Android version uses the Internet <strong>only for the optional account</strong>: if you do not sign in, it sends nothing.</li>
+    <li>Wasl runs on your phone: prayer times, the Qibla direction and your history are calculated and stored there.</li>
     <li>The Quran text and its translations <strong>are included in the app</strong>: nothing is downloaded from a server.</li>
+    <li><strong>Quran recitation</strong> is the exception: when you press play, the app asks a Wasl server (hosted on Cloudflare) for the reciter catalogue and the audio URLs, and streams the audio directly from Quran Foundation. Those requests carry technical connection data (IP address, device and requested surah), but not your account, location, history or bookmarks.</li>
+    <li>The Android version uses the Internet <strong>only for the optional account</strong>; recitation is available in the iPhone version.</li>
     <li>Prayer times and the Qibla direction are calculated <strong>on the device itself</strong>, from your location or the city you choose.</li>
   </ul>
 
@@ -228,7 +250,7 @@
     <tr>
       <td>Approximate location — <strong>optional</strong></td>
       <td>Calculating prayer times and the Qibla direction</td>
-      <td>On your phone only: computed there and never sent to any server of ours</td>
+      <td>On your phone only: computed there and never sent to any Wasl server</td>
     </tr>
     <tr>
       <td>City, calculation method, madhab and language</td>
@@ -248,13 +270,22 @@
     <tr>
       <td>Apple identifier, name and email — only if you sign in with Apple on iPhone</td>
       <td>Showing your account and allowing deletion</td>
-      <td>iPhone Keychain; never sent to any server</td>
+      <td>iPhone Keychain; never sent to a server</td>
     </tr>
   </table>
   <p>Location is <strong>optional</strong>: if you do not grant it, you can pick your city by hand and everything works the same.</p>
+  <p>Recitation audio is <strong>not stored</strong> on the device: it is streamed only when you ask for it.</p>
+
+  <h2 id="recitation">Quran recitation (audio)</h2>
+  <p>Recitation is requested only when you start it, by pressing play or "Listen from here". The app asks a Wasl server, hosted on Cloudflare, for the reciter catalogue and the audio address of each verse; the audio is streamed directly from <strong>Quran Foundation</strong> (quran.foundation) and its CDNs.</p>
+  <ul>
+    <li>The Wasl server and Quran Foundation receive the technical data needed to deliver the audio: <strong>IP address, device type and the requested surah or track</strong>. They do not receive your account, location, prayer history, reading progress or bookmarks, and this data is not used for advertising, analytics or profiling.</li>
+    <li>Wasl does not store the audio or a listening history. As with any streaming playback, the device may temporarily keep part of it in memory to avoid interruptions; it is not kept as a file.</li>
+    <li>Without an Internet connection, recitation is not available; the rest of the app keeps working.</li>
+  </ul>
 
   <h2 id="apple-account">Optional iPhone account (Sign in with Apple)</h2>
-  <p>On first launch the app offers <strong>Sign in with Apple</strong>; the <strong>Skip</strong> button is visible and the app works fully without an account. If you sign in, the app stores the stable Apple identifier and, if you authorize it, your name and email in the <strong>iPhone Keychain</strong>. There is no server of ours, no Apple tokens are stored, and that information is not used for advertising, analytics or linked to push.</p>
+  <p>On first launch the app offers <strong>Sign in with Apple</strong>; the <strong>Skip</strong> button is visible and the app works fully without an account. If you sign in, the app stores the stable Apple identifier and, if you authorize it, your name and email in the <strong>iPhone Keychain</strong>. The account is not sent to any server: the Wasl server only serves the catalogue and recitation URLs and receives no account data. No Apple tokens are stored, and that information is not used for advertising, analytics or linked to push.</p>
   <ul>
     <li>The account does not unlock any feature: it shows who is signed in and allows deletion.</li>
     <li>It is stored with <code>AfterFirstUnlockThisDeviceOnly</code>: it is not synced to iCloud and does not leave the phone.</li>
@@ -288,6 +319,7 @@
     <tr><td>Internet</td><td>Only the optional account and sync</td></tr>
   </table>
   <p>The AndroidX libraries the app uses for its widgets add auxiliary permissions (keeping the device awake, checking network state); none of them send data.</p>
+  <p>Quran recitation is available in the iPhone version.</p>
 
   <h2>iPhone permissions</h2>
   <table>
@@ -295,6 +327,7 @@
     <tr><td>Location (while using the app)</td><td>Prayer times and Qibla (optional)</td></tr>
     <tr><td>Notifications</td><td>Prayer reminders and notices sent by the app's administrator</td></tr>
   </table>
+  <p>Recitation uses the Internet connection, but iOS does not ask for a separate permission for it.</p>
 
   <h2>Push notifications on iPhone</h2>
   <p>The iPhone version can receive <strong>push notifications</strong> (notices the Wasl administrator sends from outside the app, for example an announcement). Delivery is handled by <strong>OneSignal</strong>, a notification service, through Apple's push system (APNs):</p>
@@ -309,7 +342,7 @@
   <ul>
     <li>No account required: on iPhone the Apple account is optional and local; on Android the Google account is optional. The app works the same without one.</li>
     <li>No ads, analytics or trackers.</li>
-    <li>No selling of data and no use of it for advertising or tracking. The only third parties involved are technical providers: <strong>Apple</strong> for Sign in with Apple (authentication only; the data stays on the phone), <strong>Google Firebase</strong> for the optional Android account and <strong>OneSignal</strong> for iPhone push notifications.</li>
+    <li>No selling of data and no use of it for advertising or tracking. The only third parties involved are technical providers: <strong>Apple</strong> for Sign in with Apple (authentication only; the data stays on the phone), <strong>Google Firebase</strong> for the optional Android account, <strong>OneSignal</strong> for iPhone push notifications, <strong>Quran Foundation</strong> for recitation audio and <strong>Cloudflare</strong> for hosting the Wasl server.</li>
     <li>No profiling and no automated decisions about you.</li>
   </ul>
 
@@ -317,12 +350,13 @@
   <p>If you have system backups enabled (your Google account on Android, iCloud on iPhone), the app's data may be included in that backup. That is a feature of your phone: it is handled by your provider (Google or Apple) and controlled from your device settings. The developer has no access to it.</p>
 
   <h2>On iPhone</h2>
-  <p>On iPhone, everything is computed and stored on the device. The optional Sign in with Apple account also stays in the phone's Keychain and is never sent to a server; it is deleted in Settings → person icon → Delete account, together with the app's data on this iPhone. When you use your location, Apple's system may translate the coordinates into a place name and time zone using its maps service; that lookup is made by the operating system under Apple's privacy policy, and Wasl does not receive or store it. Push notifications are explained above.</p>
+  <p>On iPhone, everything the app stores is calculated and stored on the device. The optional Sign in with Apple account also stays in the phone's Keychain and is never sent to a server; it is deleted in Settings → person icon → Delete account, together with the app's data on this iPhone. Recitation uses the Internet as explained above. When you use your location, Apple's system may translate the coordinates into a place name and time zone using its maps service; that lookup is made by the operating system under Apple's privacy policy, and Wasl does not receive or store it. Push notifications are explained above.</p>
 
   <h2>Your data stays with you</h2>
   <ul>
     <li>Uninstalling the app erases everything it stored (and the push registration is dropped); you can also clear its data from your phone settings. What the optional Android account stored in the cloud is <strong>not</strong> erased by uninstalling: to erase it, delete the account.</li>
     <li>The account can be deleted from the app (Settings → person icon → Delete account). On Android this also deletes the cloud copy; on iPhone there is no cloud copy. You can also ask by email: see <a href="eliminar-cuenta.html">Delete your account</a>.</li>
+    <li>The Wasl server does not keep a recitation history linked to you; it only serves the catalogue and the audio URLs.</li>
     <li>For any other request about your data (access, correction), write to the contact address.</li>
   </ul>
 
@@ -334,8 +368,305 @@
 
   <h2>Contact</h2>
   <p>Privacy questions: <strong><a href="mailto:deennetworks@gmail.com">deennetworks@gmail.com</a></strong></p>
+</section>
 
-  <footer>Wasl · Deen Networks · 2026 · <a href="soporte.html">Soporte / Support</a> · <a href="eliminar-cuenta.html">Eliminar la cuenta / Delete your account</a></footer>
+<hr class="rule">
+
+<section id="fr" lang="fr">
+  <header>
+    <h1>Wasl — Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 21 novembre 2026</p>
+    <p class="langs"><a href="#es">Español</a> · <a href="#en">English</a> · Français · <a href="#ar">العربية</a></p>
+  </header>
+
+  <p>Wasl (وصل) est une application du Coran et des horaires de prière créée par Deen Networks. Cette politique explique simplement quelles données l'app utilise et ce qu'il en advient.</p>
+
+  <p class="lead"><strong>En bref :</strong> Wasl n'affiche pas de publicité et n'utilise ni analyse d'audience ni traceurs. Par défaut, tout ce que l'app enregistre reste sur ton appareil. Quelque chose n'en sort que dans trois cas que tu choisis : si tu te connectes avec Google sur Android (un <strong>compte facultatif</strong> pour synchroniser tes prières et tes signets), si tu actives les notifications push de l'iPhone (OneSignal), et lorsque tu lances la récitation du Coran, dont l'audio est demandé à Quran Foundation via un serveur de Wasl. Sur iPhone, le compte facultatif <strong>Se connecter avec Apple</strong> est conservé dans le trousseau du téléphone et <strong>n'est envoyé à aucun serveur</strong>. Tout est expliqué ci-dessous.</p>
+
+  <h2>Comment ça marche (et pourquoi il n'y a presque rien à collecter)</h2>
+  <ul>
+    <li>Wasl fonctionne sur ton téléphone : les horaires de prière, la direction de la Qibla et ton historique sont calculés et conservés sur l'appareil.</li>
+    <li>Le texte du Coran et ses traductions <strong>sont inclus dans l'app</strong> : ils ne sont téléchargés depuis aucun serveur.</li>
+    <li>La <strong>récitation du Coran</strong> est l'exception : lorsque tu appuies sur lecture, l'app demande à un serveur de Wasl (hébergé sur Cloudflare) le catalogue des récitateurs et les adresses audio, puis lit l'audio en streaming depuis Quran Foundation. Ces requêtes transportent des données techniques de la connexion (adresse IP, appareil et sourate demandée), mais pas ton compte, ta localisation, ton historique ni tes signets.</li>
+    <li>La version Android n'utilise Internet <strong>que pour le compte facultatif</strong> ; la récitation est disponible dans la version iPhone.</li>
+    <li>Les horaires de prière et la direction de la Qibla sont calculés <strong>sur l'appareil</strong>, à partir de ta localisation ou de la ville que tu choisis.</li>
+  </ul>
+
+  <h2>Ce que l'app conserve sur ton appareil</h2>
+  <table>
+    <tr><th>Donnée</th><th>Pourquoi</th><th>Où</th></tr>
+    <tr>
+      <td>Localisation approximative — <strong>facultative</strong></td>
+      <td>Calculer les horaires de prière et la direction de la Qibla</td>
+      <td>Uniquement sur ton téléphone : calculée sur place et jamais envoyée à un serveur de Wasl</td>
+    </tr>
+    <tr>
+      <td>Ville, méthode de calcul, madhab et langue</td>
+      <td>Mémoriser tes réglages</td>
+      <td>Stockage privé de l'app</td>
+    </tr>
+    <tr>
+      <td>Marques de prières, série et historique</td>
+      <td>Tenir ton suivi</td>
+      <td>Stockage privé de l'app</td>
+    </tr>
+    <tr>
+      <td>Progression de lecture et signets</td>
+      <td>« Continuer la lecture » et tes références</td>
+      <td>Stockage privé de l'app</td>
+    </tr>
+    <tr>
+      <td>Identifiant Apple, nom et e-mail — uniquement si tu te connectes avec Apple sur iPhone</td>
+      <td>Afficher ton compte et permettre sa suppression</td>
+      <td>Trousseau de l'iPhone ; jamais envoyé à un serveur</td>
+    </tr>
+  </table>
+  <p>La localisation est <strong>facultative</strong> : si tu ne l'accordes pas, tu peux choisir ta ville à la main et tout fonctionne de la même manière.</p>
+  <p>L'audio de récitation <strong>n'est pas conservé</strong> sur l'appareil : il est lu en streaming uniquement lorsque tu le demandes.</p>
+
+  <h2 id="fr-recitation">Récitation du Coran (audio)</h2>
+  <p>La récitation n'est demandée que lorsque tu la lances, en appuyant sur lecture ou sur « Écouter à partir d'ici ». L'app interroge un serveur de Wasl, hébergé sur Cloudflare, pour obtenir le catalogue des récitateurs et l'adresse audio de chaque verset ; l'audio est lu directement depuis les serveurs de <strong>Quran Foundation</strong> (quran.foundation) et ses CDN.</p>
+  <ul>
+    <li>Le serveur de Wasl et Quran Foundation reçoivent les données techniques nécessaires à la diffusion : <strong>adresse IP, type d'appareil et sourate ou piste demandée</strong>. Ils ne reçoivent ni ton compte, ni ta localisation, ni ton historique de prières, ni ta progression de lecture, ni tes signets, et ces données ne servent ni à la publicité, ni à l'analyse d'audience, ni à établir des profils.</li>
+    <li>Wasl ne conserve ni l'audio ni un historique d'écoute. Comme pour toute lecture en streaming, l'appareil peut garder temporairement une partie en mémoire pour éviter les coupures ; elle n'est pas conservée comme fichier.</li>
+    <li>Sans connexion Internet, la récitation n'est pas disponible ; le reste de l'app continue de fonctionner.</li>
+  </ul>
+
+  <h2 id="fr-compte-apple">Compte facultatif sur iPhone (Se connecter avec Apple)</h2>
+  <p>À la première ouverture, l'app propose de <strong>se connecter avec Apple</strong> ; le bouton <strong>Ignorer</strong> est visible et l'app fonctionne entièrement sans compte. Si tu te connectes, l'app conserve dans le <strong>trousseau de l'iPhone</strong> l'identifiant stable Apple et, si tu l'autorises, ton nom et ton e-mail. Le compte n'est envoyé à aucun serveur : le serveur de Wasl ne sert que le catalogue et les adresses de récitation et ne reçoit aucune donnée du compte. Aucun jeton Apple n'est conservé et ces informations ne servent ni à la publicité, ni à l'analyse d'audience, ni à être liées au push.</p>
+  <ul>
+    <li>Le compte ne donne accès à aucune fonctionnalité : il sert à afficher qui est connecté et à pouvoir le supprimer.</li>
+    <li>Il est conservé avec <code>AfterFirstUnlockThisDeviceOnly</code> : il n'est pas synchronisé avec iCloud et ne quitte pas le téléphone.</li>
+    <li>Si tu retires l'accès de Wasl à ton identifiant Apple dans les Réglages de l'iPhone, l'app te déconnecte ; tes prières, ton historique, ta lecture et tes réglages restent.</li>
+    <li>Pour <strong>supprimer le compte</strong>, ouvre <strong>Réglages → icône de personne (en haut à droite) → Supprimer le compte</strong>. L'identité et toutes les données de Wasl sur cet iPhone (historique, marques, progression, signets et réglages) sont effacées immédiatement, après confirmation.</li>
+  </ul>
+
+  <h2 id="fr-compte">Compte facultatif et synchronisation (Android)</h2>
+  <p>Depuis la version 0.3.0, l'app Android te permet, <strong>si tu le souhaites</strong>, de te connecter avec ton compte Google pour garder une copie de certaines données dans le cloud et les retrouver sur un autre téléphone. Sans compte, l'app fonctionne exactement de la même manière et n'envoie rien.</p>
+  <table>
+    <tr><th>Donnée</th><th>Pourquoi</th></tr>
+    <tr><td>E-mail, nom et identifiant de ton compte Google</td><td>Identifier ton compte (Google te les demande lors de la connexion)</td></tr>
+    <tr><td>Prières marquées chaque jour</td><td>Les retrouver sur tous tes téléphones</td></tr>
+    <tr><td>Signets du Coran et position de lecture</td><td>Les retrouver sur tous tes téléphones</td></tr>
+  </table>
+  <ul>
+    <li>Ils sont traités par <strong>Google Firebase</strong> (Firebase Authentication pour la connexion et Cloud Firestore pour les données), en tant que prestataire technique. Les données synchronisées sont stockées sur des serveurs de Google en Europe.</li>
+    <li>Elles voyagent chiffrées (HTTPS) et les règles de la base de données ne permettent qu'à ton propre compte de les lire ou de les écrire. Wasl ne voit ni ne conserve ton mot de passe : la connexion est gérée par Google.</li>
+    <li><strong>Rien d'autre n'est envoyé</strong> : ni ta localisation, ni ta ville, ni tes réglages ou rappels.</li>
+    <li>Elles ne servent ni à la publicité, ni à l'analyse d'audience, ni à établir des profils, et ne sont ni vendues ni partagées.</li>
+    <li>Tu peux <strong>te déconnecter</strong> à tout moment (la synchronisation s'arrête) ou <strong>supprimer le compte</strong> dans Réglages → icône de personne (en haut à droite) → Supprimer le compte : le compte et tout ce qui est stocké dans le cloud sont effacés immédiatement ; ce qui est sur ton téléphone reste. Tu peux aussi le demander par e-mail : voir <a href="eliminar-cuenta.html">Supprimer le compte</a>.</li>
+  </ul>
+
+  <h2>Autorisations sur Android</h2>
+  <table>
+    <tr><th>Autorisation</th><th>Pourquoi</th></tr>
+    <tr><td>Localisation approximative</td><td>Horaires de prière et Qibla (facultatif)</td></tr>
+    <tr><td>Notifications</td><td>Les rappels des prières</td></tr>
+    <tr><td>Alarmes exactes</td><td>Pour que le rappel sonne à l'heure</td></tr>
+    <tr><td>Exécution après redémarrage</td><td>Reprogrammer les rappels après un redémarrage</td></tr>
+    <tr><td>Internet</td><td>Uniquement le compte facultatif et la synchronisation</td></tr>
+  </table>
+  <p>Les bibliothèques AndroidX utilisées pour les widgets ajoutent des autorisations auxiliaires (garder l'appareil éveillé, vérifier l'état du réseau) ; aucune n'envoie de données.</p>
+  <p>La récitation du Coran est disponible dans la version iPhone.</p>
+
+  <h2>Autorisations sur iPhone</h2>
+  <table>
+    <tr><th>Autorisation</th><th>Pourquoi</th></tr>
+    <tr><td>Localisation (pendant l'utilisation)</td><td>Horaires de prière et Qibla (facultatif)</td></tr>
+    <tr><td>Notifications</td><td>Les rappels des prières et les avis envoyés par l'administrateur de l'app</td></tr>
+  </table>
+  <p>La récitation utilise la connexion Internet, mais iOS ne demande pas d'autorisation séparée pour cela.</p>
+
+  <h2>Notifications push sur iPhone</h2>
+  <p>La version iPhone peut recevoir des <strong>notifications push</strong> (des avis que l'administrateur de Wasl envoie depuis l'extérieur de l'app, par exemple une annonce). La livraison est assurée par <strong>OneSignal</strong>, un service de notifications, via le système de notifications d'Apple (APNs) :</p>
+  <ul>
+    <li>Lorsque tu actives les notifications, ton appareil s'enregistre auprès de OneSignal avec un <strong>identifiant d'abonnement</strong> (dérivé de l'identifiant attribué par Apple). C'est la seule chose envoyée : <strong>ni nom, ni e-mail, ni compte</strong>, et il n'est pas lié à ton identité.</li>
+    <li>Cet identifiant sert <strong>uniquement</strong> à livrer les notifications de l'app. Il n'est utilisé ni pour la publicité, ni pour établir des profils, ni pour te suivre.</li>
+    <li>Les <strong>rappels de prière ne passent pas par OneSignal</strong> : ton propre iPhone les programme (notifications locales) et ils sont calculés sur l'appareil.</li>
+    <li>Si tu ne veux rien de tout cela, il suffit de <strong>ne pas accorder l'autorisation de notifications</strong> : l'app fonctionne de la même manière.</li>
+  </ul>
+
+  <h2>Ce que Wasl ne fait pas</h2>
+  <ul>
+    <li>Aucun compte obligatoire : sur iPhone, le compte Apple est facultatif et local ; sur Android, le compte Google est facultatif. L'app fonctionne de la même manière sans compte.</li>
+    <li>Aucune publicité, aucune analyse d'audience, aucun traceur.</li>
+    <li>Aucune vente de données et aucune utilisation à des fins de publicité ou de suivi. Les seuls tiers impliqués sont des prestataires techniques : <strong>Apple</strong> pour Se connecter avec Apple (authentification uniquement ; les données restent sur le téléphone), <strong>Google Firebase</strong> pour le compte facultatif Android, <strong>OneSignal</strong> pour les notifications push de l'iPhone, <strong>Quran Foundation</strong> pour l'audio de la récitation et <strong>Cloudflare</strong> pour l'hébergement du serveur de Wasl.</li>
+    <li>Aucun profilage et aucune décision automatisée te concernant.</li>
+  </ul>
+
+  <h2>Sauvegardes du téléphone</h2>
+  <p>Si les sauvegardes système sont activées (ton compte Google sur Android, iCloud sur iPhone), les données de l'app peuvent être incluses dans cette sauvegarde. C'est une fonction du téléphone : elle est gérée par ton fournisseur (Google ou Apple) et contrôlée depuis les réglages de l'appareil. Le développeur n'y a pas accès.</p>
+
+  <h2>Sur iPhone</h2>
+  <p>Sur iPhone, tout ce que l'app conserve est calculé et stocké sur l'appareil. Le compte facultatif Se connecter avec Apple reste également dans le trousseau du téléphone et n'est jamais envoyé à un serveur ; il est supprimé dans Réglages → icône de personne → Supprimer le compte, avec les données de l'app sur cet iPhone. La récitation utilise Internet comme expliqué ci-dessus. Lorsque tu utilises ta localisation, le système d'Apple peut convertir les coordonnées en nom de lieu et en fuseau horaire via son service de cartes ; cette requête est effectuée par le système d'exploitation selon la politique de confidentialité d'Apple, et Wasl ne la reçoit ni ne la conserve. Les notifications push sont expliquées ci-dessus.</p>
+
+  <h2>Tes données restent entre tes mains</h2>
+  <ul>
+    <li>Désinstaller l'app efface tout ce qu'elle conservait (et l'enregistrement pour le push est supprimé) ; tu peux aussi effacer ses données depuis les réglages de ton téléphone. Ce que le compte facultatif Android a stocké dans le cloud n'est <strong>pas</strong> effacé par la désinstallation : pour cela, supprime le compte.</li>
+    <li>Le compte se supprime depuis l'app (Réglages → icône de personne → Supprimer le compte). Sur Android, cela supprime aussi la copie dans le cloud ; sur iPhone, il n'y a pas de copie dans le cloud. Tu peux aussi le demander par e-mail : voir <a href="eliminar-cuenta.html">Supprimer le compte</a>.</li>
+    <li>Le serveur de Wasl ne conserve pas d'historique de récitation qui te soit associé ; il ne fait que fournir le catalogue et les adresses audio.</li>
+    <li>Pour toute autre demande concernant tes données (accès, rectification), écris à l'adresse de contact.</li>
+  </ul>
+
+  <h2>Mineurs</h2>
+  <p>Wasl convient à tous les publics. Elle ne demande aucune donnée pour fonctionner ; le compte est facultatif.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si cette politique change, la version mise à jour sera publiée ici même avec une nouvelle date. Les changements importants seront annoncés sur la fiche de l'app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions sur la confidentialité : <strong><a href="mailto:deennetworks@gmail.com">deennetworks@gmail.com</a></strong></p>
+</section>
+
+<hr class="rule">
+
+<section id="ar" lang="ar" dir="rtl">
+  <header>
+    <h1>Wasl — سياسة الخصوصية</h1>
+    <p class="meta">آخر تحديث: 21 نوفمبر 2026</p>
+    <p class="langs" dir="ltr" style="text-align:right"><a href="#es">Español</a> · <a href="#en">English</a> · <a href="#fr">Français</a> · العربية</p>
+  </header>
+
+  <p>Wasl (وصل) تطبيق للقرآن الكريم ومواقيت الصلاة أنشأته Deen Networks. تشرح هذه السياسة بوضوح ما البيانات التي يستخدمها التطبيق وما يحدث بها.</p>
+
+  <p class="lead"><strong>الخلاصة:</strong> لا يعرض Wasl إعلانات ولا يستخدم تحليلات أو أدوات تتبع. افتراضيًا، كل ما يحفظه التطبيق يبقى على جهازك. لا يخرج منه شيء إلا في ثلاث حالات تختارها أنت: إذا سجّلت الدخول بحساب Google على Android (حساب <strong>اختياري</strong> لمزامنة صلواتك وعلاماتك المرجعية)، وإذا فعّلت الإشعارات الفورية على iPhone (OneSignal)، وعند تشغيل تلاوة القرآن، حيث يُطلب الصوت من Quran Foundation عبر خادم Wasl. على iPhone، يُحفظ الحساب الاختياري عبر <strong>تسجيل الدخول باستخدام Apple</strong> في سلسلة مفاتيح الهاتف و<strong>لا يُرسل إلى أي خادم</strong>. كل ذلك مشروح أدناه.</p>
+
+  <h2>كيف يعمل التطبيق (ولماذا لا يوجد تقريبًا ما يُجمع)</h2>
+  <ul>
+    <li>يعمل Wasl على هاتفك: تُحسب مواقيت الصلاة واتجاه القبلة وسجلك وتُحفظ على الجهاز.</li>
+    <li>نص القرآن وترجماته <strong>مضمنة في التطبيق</strong>: لا تُنزَّل من أي خادم.</li>
+    <li><strong>تلاوة القرآن</strong> هي الاستثناء: عند الضغط على زر التشغيل، يطلب التطبيق من خادم Wasl (المستضاف على Cloudflare) قائمة القرّاء وعناوين الصوت، ثم يشغّل الصوت بثًا مباشرًا من Quran Foundation. تتضمن هذه الطلبات بيانات تقنية للاتصال (عنوان IP ونوع الجهاز والسورة المطلوبة)، لكنها لا تتضمن حسابك أو موقعك أو سجلك أو علاماتك المرجعية.</li>
+    <li>لا تستخدم نسخة Android الإنترنت <strong>إلا للحساب الاختياري</strong>؛ التلاوة متاحة في نسخة iPhone.</li>
+    <li>تُحسب مواقيت الصلاة واتجاه القبلة <strong>على الجهاز نفسه</strong>، انطلاقًا من موقعك أو المدينة التي تختارها.</li>
+  </ul>
+
+  <h2>ما يحفظه التطبيق على جهازك</h2>
+  <table>
+    <tr><th>البيان</th><th>الغرض</th><th>المكان</th></tr>
+    <tr>
+      <td>الموقع التقريبي — <strong>اختياري</strong></td>
+      <td>حساب مواقيت الصلاة واتجاه القبلة</td>
+      <td>على هاتفك فقط: يُحسب هناك ولا يُرسل إلى أي خادم تابع لـ Wasl</td>
+    </tr>
+    <tr>
+      <td>المدينة وطريقة الحساب والمذهب واللغة</td>
+      <td>تذكّر إعداداتك</td>
+      <td>التخزين الخاص بالتطبيق</td>
+    </tr>
+    <tr>
+      <td>علامات الصلوات والسلسلة والسجل</td>
+      <td>أن يحتفظ التطبيق بسجلك</td>
+      <td>التخزين الخاص بالتطبيق</td>
+    </tr>
+    <tr>
+      <td>تقدم القراءة والعلامات المرجعية</td>
+      <td>«متابعة القراءة» ومراجعك</td>
+      <td>التخزين الخاص بالتطبيق</td>
+    </tr>
+    <tr>
+      <td>معرّف Apple والاسم والبريد — فقط إذا سجّلت الدخول باستخدام Apple على iPhone</td>
+      <td>عرض حسابك والسماح بحذفه</td>
+      <td>سلسلة مفاتيح iPhone؛ لا يُرسل إلى أي خادم</td>
+    </tr>
+  </table>
+  <p>الموقع <strong>اختياري</strong>: إذا لم تمنحه، يمكنك اختيار مدينتك يدويًا وسيعمل كل شيء بالطريقة نفسها.</p>
+  <p>صوت التلاوة <strong>لا يُحفظ</strong> على الجهاز: يُشغَّل بثًا فقط عندما تطلبه.</p>
+
+  <h2 id="ar-recitation">تلاوة القرآن (الصوت)</h2>
+  <p>لا تُطلب التلاوة إلا عندما تشغّلها أنت، بالضغط على زر التشغيل أو على «الاستماع من هنا». يسأل التطبيق خادمًا تابعًا لـ Wasl، مستضافًا على Cloudflare، للحصول على قائمة القرّاء وعنوان صوت كل آية؛ ثم يُشغَّل الصوت مباشرة من خوادم <strong>Quran Foundation</strong> (quran.foundation) وشبكات CDN التابعة لها.</p>
+  <ul>
+    <li>يتلقى خادم Wasl وQuran Foundation البيانات التقنية اللازمة للتوصيل: <strong>عنوان IP ونوع الجهاز والسورة أو المقطع المطلوب</strong>. ولا يتلقيان حسابك ولا موقعك ولا سجل صلواتك ولا تقدم قراءتك ولا علاماتك المرجعية، ولا تُستخدم هذه البيانات للإعلانات أو التحليلات أو إنشاء ملفات تعريف.</li>
+    <li>لا يحفظ Wasl الصوت ولا سجل استماع. وكما في أي بث، قد يحتفظ الجهاز مؤقتًا بجزء في الذاكرة لتجنب الانقطاعات، لكنه لا يُحفظ كملف.</li>
+    <li>من دون اتصال بالإنترنت، لا تتوفر التلاوة؛ ويستمر باقي التطبيق في العمل.</li>
+  </ul>
+
+  <h2 id="ar-apple-account">الحساب الاختياري على iPhone (تسجيل الدخول باستخدام Apple)</h2>
+  <p>عند أول فتح، يعرض التطبيق <strong>تسجيل الدخول باستخدام Apple</strong>؛ وزر <strong>تخطي</strong> ظاهر، ويمكن استخدام التطبيق كاملًا دون حساب. إذا سجّلت الدخول، يحفظ التطبيق في <strong>سلسلة مفاتيح iPhone</strong> معرّف Apple الثابت، وإذا سمحت، اسمك وبريدك. لا يُرسل الحساب إلى أي خادم: خادم Wasl يقدّم فقط قائمة القرّاء وعناوين التلاوة ولا يتلقى أي بيانات عن الحساب. لا تُحفظ رموز Apple، ولا تُستخدم هذه المعلومات للإعلانات أو التحليلات أو ربطها بالإشعارات.</p>
+  <ul>
+    <li>لا يفتح الحساب أي ميزة: وظيفته عرض من سجّل الدخول والسماح بحذفه.</li>
+    <li>يُحفظ باستخدام <code>AfterFirstUnlockThisDeviceOnly</code>: لا تتم مزامنته مع iCloud ولا يغادر الهاتف.</li>
+    <li>إذا أزلت وصول Wasl إلى معرّف Apple من إعدادات iPhone، يسجّل التطبيق الخروج؛ وتبقى صلواتك وسجلك وقراءتك وإعداداتك.</li>
+    <li>لـ<strong>حذف الحساب</strong>، افتح <strong>الإعدادات ← أيقونة الشخص (أعلى اليمين) ← حذف الحساب</strong>. تُحذف الهوية وجميع بيانات Wasl على هذا iPhone (السجل والعلامات وتقدم القراءة والعلامات المرجعية والإعدادات) فورًا، بعد التأكيد.</li>
+  </ul>
+
+  <h2 id="ar-account">الحساب الاختياري والمزامنة (Android)</h2>
+  <p>منذ الإصدار 0.3.0، يتيح لك تطبيق Android، <strong>إذا أردت</strong>، تسجيل الدخول بحساب Google لحفظ نسخة من بعض البيانات في السحابة واستعادتها على هاتف آخر. من دون حساب، يعمل التطبيق بالطريقة نفسها تمامًا ولا يرسل شيئًا.</p>
+  <table>
+    <tr><th>البيان</th><th>الغرض</th></tr>
+    <tr><td>بريد حساب Google واسمه ومعرّفه</td><td>تحديد حسابك (تطلبها Google عند تسجيل الدخول)</td></tr>
+    <tr><td>الصلوات المحددة كل يوم</td><td>الاحتفاظ بها على جميع هواتفك</td></tr>
+    <tr><td>علامات القرآن المرجعية وموضع القراءة</td><td>الاحتفاظ بها على جميع هواتفك</td></tr>
+  </table>
+  <ul>
+    <li>تُعالَج بواسطة <strong>Google Firebase</strong> (Firebase Authentication لتسجيل الدخول وCloud Firestore للبيانات)، بصفته مزوّدًا تقنيًا. تُحفظ البيانات المزامنة على خوادم Google في أوروبا.</li>
+    <li>تنتقل مشفّرة (HTTPS)، وقواعد قاعدة البيانات تسمح فقط لحسابك بقراءتها أو كتابتها. لا يرى Wasl كلمة مرورك ولا يحفظها: تسجيل الدخول تتولاه Google.</li>
+    <li><strong>لا يُرسل أي شيء آخر</strong>: لا موقعك ولا مدينتك ولا إعداداتك أو تنبيهاتك.</li>
+    <li>لا تُستخدم للإعلانات أو التحليلات أو إنشاء ملفات تعريف، ولا تُباع أو تُشارك مع أي أحد.</li>
+    <li>يمكنك <strong>تسجيل الخروج</strong> متى شئت (تتوقف المزامنة) أو <strong>حذف الحساب</strong> من الإعدادات ← أيقونة الشخص (أعلى اليمين) ← حذف الحساب: يُحذف الحساب وكل ما حُفظ في السحابة فورًا؛ ويبقى ما في هاتفك. يمكنك أيضًا طلبه بالبريد: راجع <a href="eliminar-cuenta.html">حذف الحساب</a>.</li>
+  </ul>
+
+  <h2>الأذونات على Android</h2>
+  <table>
+    <tr><th>الإذن</th><th>الغرض</th></tr>
+    <tr><td>الموقع التقريبي</td><td>مواقيت الصلاة والقبلة (اختياري)</td></tr>
+    <tr><td>الإشعارات</td><td>تنبيهات الصلوات</td></tr>
+    <tr><td>المنبهات الدقيقة</td><td>ليرنّ التنبيه في وقته</td></tr>
+    <tr><td>التشغيل بعد إعادة البدء</td><td>إعادة جدولة التنبيهات بعد إعادة تشغيل الهاتف</td></tr>
+    <tr><td>الإنترنت</td><td>الحساب الاختياري والمزامنة فقط</td></tr>
+  </table>
+  <p>تضيف مكتبات AndroidX المستخدمة في الودجات أذونات مساعدة (إبقاء الجهاز نشطًا، والتحقق من حالة الشبكة)، ولا يرسل أي منها بيانات.</p>
+  <p>تلاوة القرآن متاحة في نسخة iPhone.</p>
+
+  <h2>الأذونات على iPhone</h2>
+  <table>
+    <tr><th>الإذن</th><th>الغرض</th></tr>
+    <tr><td>الموقع (أثناء استخدام التطبيق)</td><td>مواقيت الصلاة والقبلة (اختياري)</td></tr>
+    <tr><td>الإشعارات</td><td>تنبيهات الصلوات والإشعارات التي يرسلها مشرف التطبيق</td></tr>
+  </table>
+  <p>تستخدم التلاوة اتصال الإنترنت، لكن iOS لا يطلب إذنًا منفصلًا لذلك.</p>
+
+  <h2>الإشعارات الفورية على iPhone</h2>
+  <p>يمكن لنسخة iPhone استقبال <strong>إشعارات فورية</strong> (إشعارات يرسلها مشرف Wasl من خارج التطبيق، مثل إعلان). يتولى توصيلها <strong>OneSignal</strong>، وهي خدمة إشعارات، عبر نظام إشعارات Apple (APNs):</p>
+  <ul>
+    <li>عند تفعيل الإشعارات، يسجّل جهازك لدى OneSignal بـ<strong>معرّف اشتراك</strong> (مشتق من المعرّف الذي تمنحه Apple). وهو الشيء الوحيد الذي يُرسل: <strong>لا اسم ولا بريد ولا حساب</strong>، ولا يرتبط بهويتك.</li>
+    <li>يُستخدم هذا المعرّف <strong>فقط</strong> لتوصيل إشعارات التطبيق. لا يُستخدم للإعلانات أو إنشاء ملفات تعريف أو تتبعك.</li>
+    <li><strong>لا تمر تنبيهات الصلوات عبر OneSignal</strong>: هاتفك نفسه يجدولها (إشعارات محلية) وتُحسب على الجهاز.</li>
+    <li>إذا لم ترغب في أي من ذلك، يكفي <strong>عدم منح إذن الإشعارات</strong>: يعمل التطبيق بالطريقة نفسها.</li>
+  </ul>
+
+  <h2>ما لا يفعله Wasl</h2>
+  <ul>
+    <li>لا يفرض حسابًا: على iPhone حساب Apple اختياري ومحلي؛ وعلى Android حساب Google اختياري. يعمل التطبيق بالطريقة نفسها من دونه.</li>
+    <li>لا إعلانات ولا تحليلات ولا أدوات تتبع.</li>
+    <li>لا يبيع البيانات ولا يستخدمها للإعلانات أو التتبع. الأطراف الثالثة الوحيدة هي مزوّدون تقنيون: <strong>Apple</strong> لتسجيل الدخول باستخدام Apple (مصادقة فقط؛ تبقى البيانات على الهاتف)، و<strong>Google Firebase</strong> للحساب الاختياري على Android، و<strong>OneSignal</strong> للإشعارات الفورية على iPhone، و<strong>Quran Foundation</strong> لصوت التلاوة، و<strong>Cloudflare</strong> لاستضافة خادم Wasl.</li>
+    <li>لا ينشئ ملفات تعريف ولا يتخذ قرارات آلية بشأنك.</li>
+  </ul>
+
+  <h2>نسخ احتياطية للهاتف</h2>
+  <p>إذا كانت النسخ الاحتياطية للنظام مفعّلة (حساب Google على Android، أو iCloud على iPhone)، فقد تُضمَّن بيانات التطبيق في تلك النسخة. هذه ميزة في الهاتف نفسه: يديرها مزوّدك (Google أو Apple) وتُتحكَّم من إعدادات الجهاز. ولا يستطيع المطوّر الوصول إليها.</p>
+
+  <h2>على iPhone</h2>
+  <p>على iPhone، يُحسب كل ما يحفظه التطبيق ويُخزَّن على الجهاز. يبقى الحساب الاختياري عبر تسجيل الدخول باستخدام Apple أيضًا في سلسلة مفاتيح الهاتف ولا يُرسل إلى أي خادم؛ ويُحذف من الإعدادات ← أيقونة الشخص ← حذف الحساب، مع بيانات التطبيق على هذا iPhone. تستخدم التلاوة الإنترنت كما هو مشروح أعلاه. عند استخدام موقعك، قد يحوّل نظام Apple الإحداثيات إلى اسم مكان ومنطقة زمنية عبر خدمة الخرائط التابعة له؛ يجري ذلك النظام تحت سياسة خصوصية Apple، ولا يتلقاه Wasl ولا يحفظه. الإشعارات الفورية مشروحة أعلاه.</p>
+
+  <h2>بياناتك بين يديك</h2>
+  <ul>
+    <li>عند إلغاء تثبيت التطبيق يُحذف كل ما كان يحفظه (ويُلغى تسجيل الإشعارات)؛ ويمكنك أيضًا حذف بياناته من إعدادات هاتفك. ما حفظه الحساب الاختياري على Android في السحابة <strong>لا</strong> يُحذف بإلغاء التثبيت: لذلك احذف الحساب.</li>
+    <li>يُحذف الحساب من التطبيق (الإعدادات ← أيقونة الشخص ← حذف الحساب). على Android تُحذف أيضًا النسخة السحابية؛ وعلى iPhone لا توجد نسخة سحابية. يمكنك أيضًا طلبه بالبريد: راجع <a href="eliminar-cuenta.html">حذف الحساب</a>.</li>
+    <li>لا يحفظ خادم Wasl سجل تلاوة مرتبطًا بك؛ إنما يقدّم قائمة القرّاء وعناوين الصوت فقط.</li>
+    <li>لأي طلب آخر يتعلق ببياناتك (الاطلاع أو التصحيح)، راسلنا على بريد الاتصال.</li>
+  </ul>
+
+  <h2>الأطفال</h2>
+  <p>Wasl مناسب لجميع الأعمار. لا يطلب أي بيانات ليعمل؛ والحساب اختياري.</p>
+
+  <h2>تغييرات هذه السياسة</h2>
+  <p>إذا تغيّرت هذه السياسة، ستُنشر النسخة المحدّثة هنا نفسها مع تاريخ جديد. وإذا كان التغيير مهمًا، سيُعلن عنه في صفحة التطبيق.</p>
+
+  <h2>التواصل</h2>
+  <p>أسئلة حول الخصوصية: <strong><a href="mailto:deennetworks@gmail.com">deennetworks@gmail.com</a></strong></p>
+</section>
+
+<footer>Wasl · Deen Networks · 2026 · <a href="soporte.html">Soporte / Support / Assistance / الدعم</a> · <a href="eliminar-cuenta.html">Eliminar la cuenta / Delete your account / Supprimer le compte / حذف الحساب</a></footer>
 
 </div>
 </body>
