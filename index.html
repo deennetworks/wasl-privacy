@@ -85,13 +85,13 @@
 
   <p>Wasl (وصل) es una aplicación del Corán y de los horarios de rezo creada por Deen Networks. Esta política explica de forma directa qué datos usa la app y qué se hace con ellos.</p>
 
-  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en tres casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores), si activas las notificaciones push del iPhone (OneSignal) y al reproducir la recitación del Corán, que se pide a Quran Foundation a través de un servidor de Wasl. En iPhone, la cuenta opcional con <strong>Iniciar sesión con Apple</strong> se guarda en el llavero del teléfono y <strong>no se envía a ningún servidor</strong>. Todo se explica más abajo.</p>
+  <p class="lead"><strong>El resumen:</strong> Wasl no muestra anuncios y no usa analítica ni rastreadores. Por defecto, todo lo que la app guarda se queda en tu dispositivo. Solo sale algo de él en tres casos que eliges tú: si inicias sesión con Google en Android (una cuenta <strong>opcional</strong> para sincronizar tus rezos y marcadores), si activas las notificaciones push del iPhone (OneSignal) y al usar la recitación del Corán, cuyo catálogo y audio se piden a Quran Foundation a través de un servidor de Wasl. En iPhone, la cuenta opcional con <strong>Iniciar sesión con Apple</strong> se guarda en el llavero del teléfono y <strong>no se envía a ningún servidor</strong>. Todo se explica más abajo.</p>
 
   <h2>Cómo funciona (y por qué casi no hay nada que recopilar)</h2>
   <ul>
     <li>Wasl funciona en tu teléfono: los horarios de rezo, la dirección de la Qibla y tu historial se calculan y se guardan ahí.</li>
     <li>El texto del Corán y sus traducciones <strong>vienen incluidos en la app</strong>: no se descargan de ningún servidor.</li>
-    <li>La <strong>recitación del Corán</strong> es la excepción: al pulsar play, la app pide a un servidor de Wasl (alojado en Cloudflare) el catálogo de recitadores y las URLs de audio, y reproduce el audio en streaming desde Quran Foundation. Esas peticiones llevan datos técnicos de la conexión (dirección IP, dispositivo y sura solicitada), pero no tu cuenta, ubicación, historial ni marcadores.</li>
+    <li>La <strong>recitación del Corán</strong> es la excepción: al abrir la lista de recitadores o al pulsar play, la app pide a un servidor de Wasl (alojado en Cloudflare) el catálogo y las URLs de audio, y reproduce el audio en streaming desde Quran Foundation. Esas peticiones llevan datos técnicos de la conexión (dirección IP, dispositivo y sura solicitada), pero no tu cuenta, ubicación, historial ni marcadores.</li>
     <li>La versión de Android usa Internet <strong>solo para la cuenta opcional</strong>; la recitación está en la versión de iPhone.</li>
     <li>Los horarios de rezo y la dirección de la Qibla se calculan <strong>en el propio dispositivo</strong>, a partir de tu ubicación o de la ciudad que elijas.</li>
   </ul>
@@ -129,7 +129,7 @@
   <p>El audio de recitación <strong>no se guarda</strong> en el dispositivo: se reproduce en streaming solo cuando lo pides.</p>
 
   <h2 id="recitacion">Recitación del Corán (audio)</h2>
-  <p>La recitación solo se pide cuando tú la activas, al pulsar play o «Escuchar desde aquí». La app consulta un servidor de Wasl, alojado en Cloudflare, para obtener el catálogo de recitadores y la dirección del audio de cada aleya; el audio se reproduce directamente desde los servidores de <strong>Quran Foundation</strong> (quran.foundation) y sus CDN.</p>
+  <p>El audio de la recitación solo se pide cuando tú lo activas, al pulsar play o «Escuchar desde aquí». La app consulta el catálogo de recitadores al abrir el selector y, al reproducir, pide a un servidor de Wasl (alojado en Cloudflare) la dirección del audio de cada aleya; el audio se reproduce directamente desde los servidores de <strong>Quran Foundation</strong> (quran.foundation) y sus CDN.</p>
   <ul>
     <li>El servidor de Wasl y Quran Foundation reciben los datos técnicos necesarios para entregar el audio: <strong>dirección IP, tipo de dispositivo y la sura o pista solicitada</strong>. No reciben tu cuenta, tu ubicación, tu historial de rezos, tu progreso de lectura ni tus marcadores, y no se usan para publicidad, analítica ni perfiles.</li>
     <li>Wasl no guarda el audio ni un historial de lo que escuchas. Como en cualquier reproducción en streaming, el dispositivo puede mantener temporalmente una parte en memoria para reproducir sin cortes; no se conserva como archivo.</li>
@@ -233,13 +233,13 @@
 
   <p>Wasl (وصل) is a Quran and prayer-times app made by Deen Networks. This policy explains plainly what data the app uses and what happens to it.</p>
 
-  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in three cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks), if you enable iPhone push notifications (OneSignal), and when you play Quran recitation, whose audio is requested from Quran Foundation through a Wasl server. On iPhone, the optional <strong>Sign in with Apple</strong> account is stored in the phone's Keychain and <strong>is never sent to a server</strong>. Everything is explained below.</p>
+  <p class="lead"><strong>The short version:</strong> Wasl shows no ads and uses no analytics or trackers. By default, everything the app saves stays on your device. Something leaves it only in three cases you choose: if you sign in with Google on Android (an <strong>optional</strong> account to sync your prayers and bookmarks), if you enable iPhone push notifications (OneSignal), and when you use Quran recitation, whose catalogue and audio are requested from Quran Foundation through a Wasl server. On iPhone, the optional <strong>Sign in with Apple</strong> account is stored in the phone's Keychain and <strong>is never sent to a server</strong>. Everything is explained below.</p>
 
   <h2>How it works (and why there is almost nothing to collect)</h2>
   <ul>
     <li>Wasl runs on your phone: prayer times, the Qibla direction and your history are calculated and stored there.</li>
     <li>The Quran text and its translations <strong>are included in the app</strong>: nothing is downloaded from a server.</li>
-    <li><strong>Quran recitation</strong> is the exception: when you press play, the app asks a Wasl server (hosted on Cloudflare) for the reciter catalogue and the audio URLs, and streams the audio directly from Quran Foundation. Those requests carry technical connection data (IP address, device and requested surah), but not your account, location, history or bookmarks.</li>
+    <li><strong>Quran recitation</strong> is the exception: when you open the reciter list or press play, the app asks a Wasl server (hosted on Cloudflare) for the catalogue and the audio URLs, and streams the audio directly from Quran Foundation. Those requests carry technical connection data (IP address, device and requested surah), but not your account, location, history or bookmarks.</li>
     <li>The Android version uses the Internet <strong>only for the optional account</strong>; recitation is available in the iPhone version.</li>
     <li>Prayer times and the Qibla direction are calculated <strong>on the device itself</strong>, from your location or the city you choose.</li>
   </ul>
@@ -277,7 +277,7 @@
   <p>Recitation audio is <strong>not stored</strong> on the device: it is streamed only when you ask for it.</p>
 
   <h2 id="recitation">Quran recitation (audio)</h2>
-  <p>Recitation is requested only when you start it, by pressing play or "Listen from here". The app asks a Wasl server, hosted on Cloudflare, for the reciter catalogue and the audio address of each verse; the audio is streamed directly from <strong>Quran Foundation</strong> (quran.foundation) and its CDNs.</p>
+  <p>Recitation audio is requested only when you start it, by pressing play or "Listen from here". The app requests the reciter catalogue when you open the picker and, during playback, asks a Wasl server (hosted on Cloudflare) for the audio address of each verse; the audio is streamed directly from <strong>Quran Foundation</strong> (quran.foundation) and its CDNs.</p>
   <ul>
     <li>The Wasl server and Quran Foundation receive the technical data needed to deliver the audio: <strong>IP address, device type and the requested surah or track</strong>. They do not receive your account, location, prayer history, reading progress or bookmarks, and this data is not used for advertising, analytics or profiling.</li>
     <li>Wasl does not store the audio or a listening history. As with any streaming playback, the device may temporarily keep part of it in memory to avoid interruptions; it is not kept as a file.</li>
@@ -381,13 +381,13 @@
 
   <p>Wasl (وصل) est une application du Coran et des horaires de prière créée par Deen Networks. Cette politique explique simplement quelles données l'app utilise et ce qu'il en advient.</p>
 
-  <p class="lead"><strong>En bref :</strong> Wasl n'affiche pas de publicité et n'utilise ni analyse d'audience ni traceurs. Par défaut, tout ce que l'app enregistre reste sur ton appareil. Quelque chose n'en sort que dans trois cas que tu choisis : si tu te connectes avec Google sur Android (un <strong>compte facultatif</strong> pour synchroniser tes prières et tes signets), si tu actives les notifications push de l'iPhone (OneSignal), et lorsque tu lances la récitation du Coran, dont l'audio est demandé à Quran Foundation via un serveur de Wasl. Sur iPhone, le compte facultatif <strong>Se connecter avec Apple</strong> est conservé dans le trousseau du téléphone et <strong>n'est envoyé à aucun serveur</strong>. Tout est expliqué ci-dessous.</p>
+  <p class="lead"><strong>En bref :</strong> Wasl n'affiche pas de publicité et n'utilise ni analyse d'audience ni traceurs. Par défaut, tout ce que l'app enregistre reste sur ton appareil. Quelque chose n'en sort que dans trois cas que tu choisis : si tu te connectes avec Google sur Android (un <strong>compte facultatif</strong> pour synchroniser tes prières et tes signets), si tu actives les notifications push de l'iPhone (OneSignal), et lorsque tu utilises la récitation du Coran, dont le catalogue et l'audio sont demandés à Quran Foundation via un serveur de Wasl. Sur iPhone, le compte facultatif <strong>Se connecter avec Apple</strong> est conservé dans le trousseau du téléphone et <strong>n'est envoyé à aucun serveur</strong>. Tout est expliqué ci-dessous.</p>
 
   <h2>Comment ça marche (et pourquoi il n'y a presque rien à collecter)</h2>
   <ul>
     <li>Wasl fonctionne sur ton téléphone : les horaires de prière, la direction de la Qibla et ton historique sont calculés et conservés sur l'appareil.</li>
     <li>Le texte du Coran et ses traductions <strong>sont inclus dans l'app</strong> : ils ne sont téléchargés depuis aucun serveur.</li>
-    <li>La <strong>récitation du Coran</strong> est l'exception : lorsque tu appuies sur lecture, l'app demande à un serveur de Wasl (hébergé sur Cloudflare) le catalogue des récitateurs et les adresses audio, puis lit l'audio en streaming depuis Quran Foundation. Ces requêtes transportent des données techniques de la connexion (adresse IP, appareil et sourate demandée), mais pas ton compte, ta localisation, ton historique ni tes signets.</li>
+    <li>La <strong>récitation du Coran</strong> est l'exception : lorsque tu ouvres la liste des récitateurs ou que tu appuies sur lecture, l'app demande à un serveur de Wasl (hébergé sur Cloudflare) le catalogue et les adresses audio, puis lit l'audio en streaming depuis Quran Foundation. Ces requêtes transportent des données techniques de la connexion (adresse IP, appareil et sourate demandée), mais pas ton compte, ta localisation, ton historique ni tes signets.</li>
     <li>La version Android n'utilise Internet <strong>que pour le compte facultatif</strong> ; la récitation est disponible dans la version iPhone.</li>
     <li>Les horaires de prière et la direction de la Qibla sont calculés <strong>sur l'appareil</strong>, à partir de ta localisation ou de la ville que tu choisis.</li>
   </ul>
@@ -425,7 +425,7 @@
   <p>L'audio de récitation <strong>n'est pas conservé</strong> sur l'appareil : il est lu en streaming uniquement lorsque tu le demandes.</p>
 
   <h2 id="fr-recitation">Récitation du Coran (audio)</h2>
-  <p>La récitation n'est demandée que lorsque tu la lances, en appuyant sur lecture ou sur « Écouter à partir d'ici ». L'app interroge un serveur de Wasl, hébergé sur Cloudflare, pour obtenir le catalogue des récitateurs et l'adresse audio de chaque verset ; l'audio est lu directement depuis les serveurs de <strong>Quran Foundation</strong> (quran.foundation) et ses CDN.</p>
+  <p>L'audio de la récitation n'est demandé que lorsque tu le lances, en appuyant sur lecture ou sur « Écouter à partir d'ici ». L'app demande le catalogue des récitateurs à l'ouverture du sélecteur et, pendant la lecture, interroge un serveur de Wasl (hébergé sur Cloudflare) pour obtenir l'adresse audio de chaque verset ; l'audio est lu directement depuis les serveurs de <strong>Quran Foundation</strong> (quran.foundation) et ses CDN.</p>
   <ul>
     <li>Le serveur de Wasl et Quran Foundation reçoivent les données techniques nécessaires à la diffusion : <strong>adresse IP, type d'appareil et sourate ou piste demandée</strong>. Ils ne reçoivent ni ton compte, ni ta localisation, ni ton historique de prières, ni ta progression de lecture, ni tes signets, et ces données ne servent ni à la publicité, ni à l'analyse d'audience, ni à établir des profils.</li>
     <li>Wasl ne conserve ni l'audio ni un historique d'écoute. Comme pour toute lecture en streaming, l'appareil peut garder temporairement une partie en mémoire pour éviter les coupures ; elle n'est pas conservée comme fichier.</li>
@@ -529,13 +529,13 @@
 
   <p>Wasl (وصل) تطبيق للقرآن الكريم ومواقيت الصلاة أنشأته Deen Networks. تشرح هذه السياسة بوضوح ما البيانات التي يستخدمها التطبيق وما يحدث بها.</p>
 
-  <p class="lead"><strong>الخلاصة:</strong> لا يعرض Wasl إعلانات ولا يستخدم تحليلات أو أدوات تتبع. افتراضيًا، كل ما يحفظه التطبيق يبقى على جهازك. لا يخرج منه شيء إلا في ثلاث حالات تختارها أنت: إذا سجّلت الدخول بحساب Google على Android (حساب <strong>اختياري</strong> لمزامنة صلواتك وعلاماتك المرجعية)، وإذا فعّلت الإشعارات الفورية على iPhone (OneSignal)، وعند تشغيل تلاوة القرآن، حيث يُطلب الصوت من Quran Foundation عبر خادم Wasl. على iPhone، يُحفظ الحساب الاختياري عبر <strong>تسجيل الدخول باستخدام Apple</strong> في سلسلة مفاتيح الهاتف و<strong>لا يُرسل إلى أي خادم</strong>. كل ذلك مشروح أدناه.</p>
+  <p class="lead"><strong>الخلاصة:</strong> لا يعرض Wasl إعلانات ولا يستخدم تحليلات أو أدوات تتبع. افتراضيًا، كل ما يحفظه التطبيق يبقى على جهازك. لا يخرج منه شيء إلا في ثلاث حالات تختارها أنت: إذا سجّلت الدخول بحساب Google على Android (حساب <strong>اختياري</strong> لمزامنة صلواتك وعلاماتك المرجعية)، وإذا فعّلت الإشعارات الفورية على iPhone (OneSignal)، وعند استخدام تلاوة القرآن، حيث تُطلب قائمة القرّاء والصوت من Quran Foundation عبر خادم Wasl. على iPhone، يُحفظ الحساب الاختياري عبر <strong>تسجيل الدخول باستخدام Apple</strong> في سلسلة مفاتيح الهاتف و<strong>لا يُرسل إلى أي خادم</strong>. كل ذلك مشروح أدناه.</p>
 
   <h2>كيف يعمل التطبيق (ولماذا لا يوجد تقريبًا ما يُجمع)</h2>
   <ul>
     <li>يعمل Wasl على هاتفك: تُحسب مواقيت الصلاة واتجاه القبلة وسجلك وتُحفظ على الجهاز.</li>
     <li>نص القرآن وترجماته <strong>مضمنة في التطبيق</strong>: لا تُنزَّل من أي خادم.</li>
-    <li><strong>تلاوة القرآن</strong> هي الاستثناء: عند الضغط على زر التشغيل، يطلب التطبيق من خادم Wasl (المستضاف على Cloudflare) قائمة القرّاء وعناوين الصوت، ثم يشغّل الصوت بثًا مباشرًا من Quran Foundation. تتضمن هذه الطلبات بيانات تقنية للاتصال (عنوان IP ونوع الجهاز والسورة المطلوبة)، لكنها لا تتضمن حسابك أو موقعك أو سجلك أو علاماتك المرجعية.</li>
+    <li><strong>تلاوة القرآن</strong> هي الاستثناء: عند فتح قائمة القرّاء أو الضغط على زر التشغيل، يطلب التطبيق من خادم Wasl (المستضاف على Cloudflare) قائمة القرّاء وعناوين الصوت، ثم يشغّل الصوت بثًا مباشرًا من Quran Foundation. تتضمن هذه الطلبات بيانات تقنية للاتصال (عنوان IP ونوع الجهاز والسورة المطلوبة)، لكنها لا تتضمن حسابك أو موقعك أو سجلك أو علاماتك المرجعية.</li>
     <li>لا تستخدم نسخة Android الإنترنت <strong>إلا للحساب الاختياري</strong>؛ التلاوة متاحة في نسخة iPhone.</li>
     <li>تُحسب مواقيت الصلاة واتجاه القبلة <strong>على الجهاز نفسه</strong>، انطلاقًا من موقعك أو المدينة التي تختارها.</li>
   </ul>
@@ -573,7 +573,7 @@
   <p>صوت التلاوة <strong>لا يُحفظ</strong> على الجهاز: يُشغَّل بثًا فقط عندما تطلبه.</p>
 
   <h2 id="ar-recitation">تلاوة القرآن (الصوت)</h2>
-  <p>لا تُطلب التلاوة إلا عندما تشغّلها أنت، بالضغط على زر التشغيل أو على «الاستماع من هنا». يسأل التطبيق خادمًا تابعًا لـ Wasl، مستضافًا على Cloudflare، للحصول على قائمة القرّاء وعنوان صوت كل آية؛ ثم يُشغَّل الصوت مباشرة من خوادم <strong>Quran Foundation</strong> (quran.foundation) وشبكات CDN التابعة لها.</p>
+  <p>لا يُطلب صوت التلاوة إلا عندما تشغّله أنت، بالضغط على زر التشغيل أو على «الاستماع من هنا». يطلب التطبيق قائمة القرّاء عند فتح قائمة الاختيار، وأثناء التشغيل يسأل خادمًا تابعًا لـ Wasl (مستضافًا على Cloudflare) للحصول على عنوان صوت كل آية؛ ثم يُشغَّل الصوت مباشرة من خوادم <strong>Quran Foundation</strong> (quran.foundation) وشبكات CDN التابعة لها.</p>
   <ul>
     <li>يتلقى خادم Wasl وQuran Foundation البيانات التقنية اللازمة للتوصيل: <strong>عنوان IP ونوع الجهاز والسورة أو المقطع المطلوب</strong>. ولا يتلقيان حسابك ولا موقعك ولا سجل صلواتك ولا تقدم قراءتك ولا علاماتك المرجعية، ولا تُستخدم هذه البيانات للإعلانات أو التحليلات أو إنشاء ملفات تعريف.</li>
     <li>لا يحفظ Wasl الصوت ولا سجل استماع. وكما في أي بث، قد يحتفظ الجهاز مؤقتًا بجزء في الذاكرة لتجنب الانقطاعات، لكنه لا يُحفظ كملف.</li>
